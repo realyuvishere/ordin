@@ -37,7 +37,8 @@ p {
 }
 .abt p {
 	padding: 2rem 5rem;
-	font-family: 'Source Sans Pro'
+	font-family: 'Source Sans Pro';
+	font-size: 1.5rem
 }
 .cntdwn {
 	text-align: center;
@@ -76,4 +77,11 @@ footer {
 .fb:hover {
 	color: #3b5998;
 	background-color: #fff;
+}
+.abt p i {
+	font-family: 'Montserrat';
+	font-size: 1.5rem
+}
+.abt p i b {
+	font-size: 5rem
 }
