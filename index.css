@@ -65,7 +65,7 @@ p {
 footer {
 	width: 100%;
 	height: 20rem;
-	background-color: #ED1F00;
+	background-color: #006699;
 	padding: 5rem;
 	bottom: 0
 }
@@ -81,7 +81,8 @@ footer {
 }
 .abt p i {
 	font-family: 'Montserrat';
-	font-size: 1.5rem
+	font-size: 1.5rem;
+	color: #fff
 }
 .abt p i b {
 	font-size: 5rem

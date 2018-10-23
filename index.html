@@ -28,21 +28,6 @@
 		</style>
 	</head>
 	<body data-spy="scroll" data-target=".navbar">
-		<div class="loader-div">
-			<div class="loader">
-				<div class="rect1"></div>
-				<div class="rect2"></div>
-				<div class="rect3"></div>
-				<div class="rect4"></div>
-				<div class="rect5"></div>
-			</div>
-		</div>
-		<script>
-			$(window).load(function(){
-				$('.loader').fadeOut("slow");
-				$('.loader-div').delay(1000).fadeOut("slow");
-			});
-		</script>
 		<nav class="navbar fixed-top navbar-expand-md navbar-dark" data-spy="affix">
 			<span class="navbar-brand mb-0 h1">Ordin@trix 18.0</span>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navb" aria-controls="navb" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,7 +35,7 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navb">
 				<ul class="nav navbar-nav mr-auto mt-2 mt-lg-0" role="tablist">
-					<li class="">
+					<li class="active">
 						<a class="nav-item nav-link" id="homeb" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
 					</li>
 					<li class="">
