@@ -17,26 +17,21 @@
 		<link rel="shortcut icon" href="favicon.ico">
 		<link rel="stylesheet" href="https://yuvrajsharma07.github.io/Web_Development_Folder/Libraries/ripple_effect_v0.3/ripple_effect_v0.3/ripple_effect.min.css">
 		<link rel="stylesheet" href="index.css">
-		<style>
-			.affix {
-				top: 0;
-				width: 100%;
-			}
-			.affix + .container-fluid {
-				padding-top: 70px;
-			}
-		</style>
 	</head>
-	<body data-spy="scroll" data-target=".navbar">
-		<nav class="navbar fixed-top navbar-expand-md navbar-dark" data-spy="affix">
+	<body>
+		<div class="intro">
+			<div class="logo lwhite">Ordin@trix</div>
+		</div>
+		<div class="mainbod none">
+			<nav class="navbar fixed-top navbar-expand-md navbar-dark">
 			<span class="navbar-brand mb-0 h1">Ordin@trix 18.0</span>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navb" aria-controls="navb" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navb">
 				<ul class="nav navbar-nav mr-auto mt-2 mt-lg-0" role="tablist">
-					<li class="active">
-						<a class="nav-item nav-link" id="homeb" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+					<li class="">
+						<a class="nav-item nav-link active show" id="homeb" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
 					</li>
 					<li class="">
 						<a class="nav-item nav-link" id="regis" data-toggle="tab" href="#reg" role="tab" aria-controls="reg" aria-selected="false">Register</a>
@@ -50,9 +45,9 @@
 				</ul>
 			</div>
 		</nav>
-		<div class="banner"></div>
-		<div class="tab-content">
-			<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home">
+			<div class="banner"></div>
+			<div class="tab-content">
+				<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home">
 				<div id="slides" class="carousel slide" data-ride="carousel">
 					<ol class="carousel-indicators">
 						<li data-target="#slides" data-slide-to="0" class="active"></li>
@@ -102,18 +97,320 @@
 					</div>
 				</div>
 			</div>
-			<div class="tab-pane fade" id="reg" role="tabpanel" aria-labelledby="regis">...stuff</div>
-			<div class="tab-pane fade" id="eve" role="tabpanel" aria-labelledby="event">...here</div>
-			<div class="tab-pane fade" id="con" role="tabpanel" aria-labelledby="contact">
+				<div class="tab-pane fade" id="reg" role="tabpanel" aria-labelledby="regis">
+					<div class="container">
+						<div class="banner"></div>
+						<h1 class="text-center">Registration Desk</h1>
+						<p class="container">Register yourself here for various events.</p>
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-6 col-md-12">
+									<div class="banner"></div>
+									<h2>Movie@trix</h2>
+									<form class="container">
+										<div class="form-row">
+											<div class="form-group col-md-6">
+												<label for="part1">Name of participant</label>
+												<input type="text" class="form-control" id="part2" placeholder="Participant #1">
+											</div>
+											<div class="form-group col-md-6">
+												<label for="part2">Name of participant</label>
+												<input type="text" class="form-control" id="part2" placeholder="Participant #2">
+											</div>
+										</div>
+										<div class="form-row">
+											<div class="form-group col-md-6">
+												<label for="epart1">Email of participant</label>
+												<input type="email" class="form-control" id="part2" placeholder="Participant #1">
+											</div>
+											<div class="form-group col-md-6">
+												<label for="epart2">Email of participant</label>
+												<input type="email" class="form-control" id="part2" placeholder="Participant #2">
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="sname">School Name</label>
+											<input type="text" class="form-control" id="sname" placeholder="School Name">
+										</div>
+										<div class="form-group">
+											<label for="sname">School Email</label>
+											<input type="text" class="form-control" id="sname" placeholder="School Email">
+										</div>
+										<button type="submit" class="btn btn-danger">Let's Roll</button>
+									</form>
+								</div>
+								<div class="col-lg-6 col-md-12">
+									<div class="banner"></div>
+									<h2>Script@trix</h2>
+									<form class="container">
+										<div class="form-row">
+											<div class="form-group col-md-6">
+												<label for="part1">Name of participant</label>
+												<input type="text" class="form-control" id="part2" placeholder="Participant #1">
+											</div>
+											<div class="form-group col-md-6">
+												<label for="part2">Name of participant</label>
+												<input type="text" class="form-control" id="part2" placeholder="Participant #2">
+											</div>
+										</div>
+										<div class="form-row">
+											<div class="form-group col-md-6">
+												<label for="epart1">Email of participant</label>
+												<input type="email" class="form-control" id="part2" placeholder="Participant #1">
+											</div>
+											<div class="form-group col-md-6">
+												<label for="epart2">Email of participant</label>
+												<input type="email" class="form-control" id="part2" placeholder="Participant #2">
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="sname">School Name</label>
+											<input type="text" class="form-control" id="sname" placeholder="School Name">
+										</div>
+										<div class="form-group">
+											<label for="sname">School Email</label>
+											<input type="text" class="form-control" id="sname" placeholder="School Email">
+										</div>
+										<button type="submit" class="btn btn-danger">Commit Changes</button>
+									</form>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-6 col-md-12">
+									<div class="banner"></div>
+									<h2>Snap@trix</h2>
+									<form class="container">
+										<div class="form-row">
+											<div class="form-group col-md-6">
+												<label for="part1">Name of participant</label>
+												<input type="text" class="form-control" id="part2" placeholder="Participant #1">
+											</div>
+											<div class="form-group col-md-6">
+												<label for="part2">Name of participant</label>
+												<input type="text" class="form-control" id="part2" placeholder="Participant #2">
+											</div>
+										</div>
+										<div class="form-row">
+											<div class="form-group col-md-6">
+												<label for="epart1">Email of participant</label>
+												<input type="email" class="form-control" id="part2" placeholder="Participant #1">
+											</div>
+											<div class="form-group col-md-6">
+												<label for="epart2">Email of participant</label>
+												<input type="email" class="form-control" id="part2" placeholder="Participant #2">
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="sname">School Name</label>
+											<input type="text" class="form-control" id="sname" placeholder="School Name">
+										</div>
+										<div class="form-group">
+											<label for="sname">School Email</label>
+											<input type="text" class="form-control" id="sname" placeholder="School Email">
+										</div>
+										<button type="submit" class="btn btn-danger">Aw Snap</button>
+									</form>
+								</div>
+								<div class="col-lg-6 col-md-12">
+									<div class="banner"></div>
+									<h2>Crypt@trix</h2>
+									<form class="container">
+										<div class="form-row">
+											<div class="form-group col-md-6">
+												<label for="part1">Name of participant</label>
+												<input type="text" class="form-control" id="part2" placeholder="Participant #1">
+											</div>
+											<div class="form-group col-md-6">
+												<label for="part2">Name of participant</label>
+												<input type="text" class="form-control" id="part2" placeholder="Participant #2">
+											</div>
+										</div>
+										<div class="form-row">
+											<div class="form-group col-md-6">
+												<label for="epart1">Email of participant</label>
+												<input type="email" class="form-control" id="part2" placeholder="Participant #1">
+											</div>
+											<div class="form-group col-md-6">
+												<label for="epart2">Email of participant</label>
+												<input type="email" class="form-control" id="part2" placeholder="Participant #2">
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="sname">School Name</label>
+											<input type="text" class="form-control" id="sname" placeholder="School Name">
+										</div>
+										<div class="form-group">
+											<label for="sname">School Email</label>
+											<input type="text" class="form-control" id="sname" placeholder="School Email">
+										</div>
+										<button type="submit" class="btn btn-danger">Coffee Break</button>
+									</form>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-6 col-md-12">
+									<div class="banner"></div>
+									<h2>Game@trix</h2>
+									<form class="container">
+										<div class="form-row">
+											<div class="form-group col-md-6">
+												<label for="part1">Name of participant</label>
+												<input type="text" class="form-control" id="part2" placeholder="Participant #1">
+											</div>
+											<div class="form-group col-md-6">
+												<label for="part2">Name of participant</label>
+												<input type="text" class="form-control" id="part2" placeholder="Participant #2">
+											</div>
+										</div>
+										<div class="form-row">
+											<div class="form-group col-md-6">
+												<label for="epart1">Email of participant</label>
+												<input type="email" class="form-control" id="part2" placeholder="Participant #1">
+											</div>
+											<div class="form-group col-md-6">
+												<label for="epart2">Email of participant</label>
+												<input type="email" class="form-control" id="part2" placeholder="Participant #2">
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="sname">School Name</label>
+											<input type="text" class="form-control" id="sname" placeholder="School Name">
+										</div>
+										<div class="form-group">
+											<label for="sname">School Email</label>
+											<input type="text" class="form-control" id="sname" placeholder="School Email">
+										</div>
+										<button type="submit" class="btn btn-danger">Chicken Dinner</button>
+									</form>
+								</div>
+								<div class="col-lg-6 col-md-12">
+									<div class="banner"></div>
+									<h2>Ide@trix</h2>
+									<form class="container">
+										<div class="form-row">
+											<div class="form-group col-md-6">
+												<label for="part1">Name of participant</label>
+												<input type="text" class="form-control" id="part2" placeholder="Participant #1">
+											</div>
+											<div class="form-group col-md-6">
+												<label for="part2">Name of participant</label>
+												<input type="text" class="form-control" id="part2" placeholder="Participant #2">
+											</div>
+										</div>
+										<div class="form-row">
+											<div class="form-group col-md-6">
+												<label for="epart1">Email of participant</label>
+												<input type="email" class="form-control" id="part2" placeholder="Participant #1">
+											</div>
+											<div class="form-group col-md-6">
+												<label for="epart2">Email of participant</label>
+												<input type="email" class="form-control" id="part2" placeholder="Participant #2">
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="sname">School Name</label>
+											<input type="text" class="form-control" id="sname" placeholder="School Name">
+										</div>
+										<div class="form-group">
+											<label for="sname">School Email</label>
+											<input type="text" class="form-control" id="sname" placeholder="School Email">
+										</div>
+										<button type="submit" class="btn btn-danger">I got something</button>
+									</form>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-6 col-md-12">
+									<div class="banner"></div>
+									<h2>Music@trix</h2>
+									<form class="container">
+										<div class="form-row">
+											<div class="form-group col-md-6">
+												<label for="part1">Name of participant</label>
+												<input type="text" class="form-control" id="part2" placeholder="Participant #1">
+											</div>
+											<div class="form-group col-md-6">
+												<label for="part2">Name of participant</label>
+												<input type="text" class="form-control" id="part2" placeholder="Participant #2">
+											</div>
+										</div>
+										<div class="form-row">
+											<div class="form-group col-md-6">
+												<label for="epart1">Email of participant</label>
+												<input type="email" class="form-control" id="part2" placeholder="Participant #1">
+											</div>
+											<div class="form-group col-md-6">
+												<label for="epart2">Email of participant</label>
+												<input type="email" class="form-control" id="part2" placeholder="Participant #2">
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="sname">School Name</label>
+											<input type="text" class="form-control" id="sname" placeholder="School Name">
+										</div>
+										<div class="form-group">
+											<label for="sname">School Email</label>
+											<input type="text" class="form-control" id="sname" placeholder="School Email">
+										</div>
+										<button type="submit" class="btn btn-danger">RIP Speakers</button>
+									</form>
+								</div>
+								<div class="col-lg-6 col-md-12">
+									<div class="banner"></div>
+									<h2>Create@trix</h2>
+									<form class="container">
+										<div class="form-row">
+											<div class="form-group col-md-6">
+												<label for="part1">Name of participant</label>
+												<input type="text" class="form-control" id="part2" placeholder="Participant #1">
+											</div>
+											<div class="form-group col-md-6">
+												<label for="part2">Name of participant</label>
+												<input type="text" class="form-control" id="part2" placeholder="Participant #2">
+											</div>
+										</div>
+										<div class="form-row">
+											<div class="form-group col-md-6">
+												<label for="epart1">Email of participant</label>
+												<input type="email" class="form-control" id="part2" placeholder="Participant #1">
+											</div>
+											<div class="form-group col-md-6">
+												<label for="epart2">Email of participant</label>
+												<input type="email" class="form-control" id="part2" placeholder="Participant #2">
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="sname">School Name</label>
+											<input type="text" class="form-control" id="sname" placeholder="School Name">
+										</div>
+										<div class="form-group">
+											<label for="sname">School Email</label>
+											<input type="text" class="form-control" id="sname" placeholder="School Email">
+										</div>
+										<button type="submit" class="btn btn-danger">Pixar's Up</button>
+									</form>
+								</div>
+							</div>
+							<div class="banner"></div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="eve" role="tabpanel" aria-labelledby="event">
+					<div class="container">
+						<h1 class="text-center">The Events</h1>
+						<p>Because you have to know what all is in the store.</p>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="con" role="tabpanel" aria-labelledby="contact">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7008.233786192498!2d77.15736990229725!3d28.566252389974288!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1da64b31037f%3A0x9fe8114b5940d45c!2sTagore+International+School!5e0!3m2!1sen!2sin!4v1513607065658" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 			</div>
-		</div>
-		<footer>
-			<div class="text-center">
-				<a class="text-center" href="https://www.facebook.com/events/164980130772016/" target="_blank" alt="Visit Our Facebook Page"><i class="fb fab fa-facebook"></i></a>
 			</div>
-		</footer>
-		
+			<footer>
+				<div class="text-center">
+					<a class="text-center" href="https://www.facebook.com/events/164980130772016/" target="_blank" alt="Visit Our Facebook Page"><i class="fb fab fa-facebook"></i></a>
+				</div>
+			</footer>
+		</div>
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

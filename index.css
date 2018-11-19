@@ -1,6 +1,9 @@
 body {
 	background-color: #000;
-	color: #fff
+	color: #fff;
+	transition: .4s ease-out;
+	animation: 1s opacity ease-out;
+	-webkit-animation: 1s opacity ease-out;
 }
 ::selection {
 	background: #f9f9f9;
@@ -23,14 +26,16 @@ h1, h2 {
 p {
 	font-family: 'Quicksand';
 	letter-spacing: 1px;
-	color: #878787
+	color: #878787;
+	font-size: 1.5rem
 }
 .navbar {
-	background-color: #FE4936
+	background-color: #333;
+	animation: 1s fromtop ease-out;
+	-webkit-animation: 1s fromtop ease-out;
 }
 .banner {
 	width: 100%;
-	background-color: #444;
 	height: 5rem
 }
 .abt {
@@ -87,3 +92,54 @@ footer {
 .abt p i b {
 	font-size: 5rem
 }
+.nav li {
+	transition: .4s ease-out
+}
+.nav li:hover, a.active {
+	background-color: rgba(254, 73, 53, 0.7);
+	padding-left: 1rem;
+	padding-right: 1rem
+}
+.mainbod {
+	transition: .4s ease-out;
+	animation: 1s opacity ease-out;
+	-webkit-animation: 1s opacity ease-out;
+}
+.intro {
+	height: 60vh;
+	width: 100%;
+	padding-top: 40vh;
+	text-align: center;
+	transition: .2s ease-out
+}
+.logo {
+	font-family: 'Product Sans';
+	font-size: 5rem;
+	animation: 5s typing;
+	-webkit-animation: 5s typing;
+	margin: 0 auto;
+	overflow: hidden;
+    white-space: nowrap;
+	font-weight: 500;
+	color: rgb(254, 73, 53);
+	transition: .4s ease-out
+}
+.int2 {
+	animation: 1.5s totop ease-out;
+	-webkit-animation: 1.5s totop ease-out;
+}
+.lwhite {
+	color: #fff
+}
+.none {
+	display: none
+}
+
+@keyframes totop{from{margin-top: 0px;opacity: 1}to{margin-top: -300px;opacity: 0}}
+@-webkit-keyframes totop{from{margin-top: 0px;opacity: 1}to{margin-top: -300px;opacity: 0}}
+@keyframes fromtop{from{margin-top: -300px;opacity: 0}to{margin-top: 0px;opacity: 1}}
+@-webkit-keyframes fromtop{from{margin-top: -300px;opacity: 0}to{margin-top: 0px;opacity: 1}}
+@keyframes typing{from{width: 0}to{width: 100%}}
+@-webkit-keyframes typing{from{width: 0}to{width: 100%}}
+@keyframes opacity{from{opacity: 0}to{opacity: 1}}
+@-webkit-keyframes opacity{from{opacity: 0}to{opacity: 1}}
