@@ -115,8 +115,8 @@ footer {
 .logo {
 	font-family: 'Product Sans';
 	font-size: 5rem;
-	animation: 5s typing;
-	-webkit-animation: 5s typing;
+	animation: 4s typing;
+	-webkit-animation: 4s typing;
 	margin: 0 auto;
 	overflow: hidden;
     white-space: nowrap;
