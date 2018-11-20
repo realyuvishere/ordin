@@ -27,8 +27,8 @@ var x = setInterval(function() {
     }
 }, 1000);
 setTimeout(function(){
-	$(".logo").removeClass("lwhite");
-	$('body').css('background-color', '#fff');
+	$(".logo").addClass("lwhite");
+	$('body').css('background-color', '#000');
 }, 1500);
 setTimeout(function(){
 	$(".intro").addClass("int2");
@@ -36,5 +36,4 @@ setTimeout(function(){
 setTimeout(function(){
 	$(".mainbod").removeClass("none");
 	$(".intro").addClass("none");
-	$("body").css('background-color', '#000');
-}, 3600)
+}, 3600);
