@@ -176,7 +176,7 @@ a.active {
 	-webkit-animation: 4s typing;
 	margin: 0 auto;
 	overflow: hidden;
-    white-space: nowrap;
+	white-space: nowrap;
 	font-weight: 500;
 	color: rgb(254, 73, 53);
 	transition: .4s ease-out
@@ -230,6 +230,9 @@ a.active {
 }
 .modal {
 	color: #222;
+}
+.img-fluid {
+	width: 10%;
 }
 .modal p {
 	font-size: 1rem
