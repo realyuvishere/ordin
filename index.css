@@ -19,7 +19,7 @@ h1 {
 	font-size: 4.5rem
 }
 h1, h2 {
-	font-family: 'Product Sans';
+	font-family: 'Righteous';
 	letter-spacing: 1px
 }
 p {
@@ -58,7 +58,7 @@ p {
 	background-color: #333;
 	color: #fff;
 	font-size: 6rem;
-	font-family: 'Product Sans';
+	font-family: 'Righteous';
 	letter-spacing: 1.5rem;
 }
 .cntdwn p {
@@ -170,7 +170,7 @@ a.active {
 	transition: .2s ease-out
 }
 .logo {
-	font-family: 'Product Sans';
+	font-family: 'Righteous';
 	font-size: 5rem;
 	animation: 4s typing;
 	-webkit-animation: 4s typing;
