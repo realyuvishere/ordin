@@ -19,7 +19,7 @@ h1 {
 	font-size: 4.5rem
 }
 h1, h2 {
-	font-family: 'Righteous';
+	font-family: 'Loves';
 	letter-spacing: 1px
 }
 p {
@@ -30,6 +30,7 @@ p {
 }
 .navbar {
 	background-color: #333;
+    padding: 0px;
 	animation: 1s fromtop ease-out;
 	-webkit-animation: 1s fromtop ease-out;
 }
@@ -58,7 +59,7 @@ p {
 	background-color: #333;
 	color: #fff;
 	font-size: 6rem;
-	font-family: 'Righteous';
+	font-family: 'Loves';
 	letter-spacing: 1.5rem;
 }
 .cntdwn p {
@@ -110,7 +111,8 @@ footer a:hover {
 	color: #fff
 }
 .fdiv {
-	font-size: .8rem
+	font-size: .8rem;
+    padding-top: 1rem
 }
 .fb {
 	font-size: 3rem;
@@ -169,8 +171,11 @@ a.active {
 	text-align: center;
 	transition: .2s ease-out
 }
+.navbar-brand {
+    padding: 0px
+}
 .logo {
-	font-family: 'Righteous';
+	font-family: 'Loves';
 	font-size: 5rem;
 	animation: 4s typing;
 	-webkit-animation: 4s typing;
@@ -231,8 +236,9 @@ a.active {
 .modal {
 	color: #222;
 }
-.img-fluid {
-	width: 10%;
+.logoimg {
+	width: 25%;
+    padding-bottom: 0.1rem
 }
 .modal p {
 	font-size: 1rem
@@ -270,7 +276,10 @@ ul, ol {
 		text-align: left !important
 	}
 }
-
+@font-face {
+    font-family: Loves;
+    src: url(loves/LOVES.ttf);
+}
 @keyframes totop{from{margin-top: 0px;opacity: 1}to{margin-top: -300px;opacity: 0}}
 @-webkit-keyframes totop{from{margin-top: 0px;opacity: 1}to{margin-top: -300px;opacity: 0}}
 @keyframes fromtop{from{margin-top: -300px;opacity: 0}to{margin-top: 0px;opacity: 1}}
