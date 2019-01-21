@@ -43,7 +43,7 @@ p {
 }
 .abt p {
 	padding: 2rem 5rem;
-	font-family: 'Source Sans Pro';
+	font-family: 'Montserrat';
 	font-size: 1.5rem
 }
 .cntdwn {
@@ -112,7 +112,13 @@ footer a:hover {
 }
 .fdiv {
 	font-size: .8rem;
-    padding-top: 1rem
+    padding-top: 1rem;
+    font-family: 'Loves'
+}
+.headsimg {
+    height: auto;
+    width: 100%;
+    border-radius: 100%;
 }
 .fb {
 	font-size: 3rem;
@@ -196,7 +202,7 @@ a.active {
 .none {
 	display: none
 }
-.events .row .col-lg-4, .contact .col-lg-3 {
+.events .row .col-lg-4, .contact .col-lg-4 {
 	padding: 1rem;
 	transition: .4s ease-out;
 	cursor: pointer;
@@ -204,13 +210,13 @@ a.active {
 	position: relative;
 	z-index: 1;
 }
-.events .row .col-lg-4:hover, .contact .col-lg-3:hover {
+.events .row .col-lg-4:hover, .contact .col-lg-4:hover {
 	color: #000
 }
-.events .row .col-lg-4:focus, .contact .col-lg-3:focus {
+.events .row .col-lg-4:focus, .contact .col-lg-4:focus {
 	background-color: rgba(255, 255, 255, 0.9)
 }
-.events .row .col-lg-4:before, .contact .col-lg-3:before {
+.events .row .col-lg-4:before, .contact .col-lg-4:before {
     content: "";
     position: absolute;
     background: rgba(255, 255, 255, 0.9);
@@ -222,7 +228,7 @@ a.active {
 	transition: 0.2s ease-in;
     -webkit-transition: 0.2s ease-in;
 }
-.events .row .col-lg-4:hover:before, .contact .col-lg-3:hover:before {
+.events .row .col-lg-4:hover:before, .contact .col-lg-4:hover:before {
     top: 0;
 	bottom: 0;
 	left: 0;
@@ -250,15 +256,15 @@ ul, ol {
 	font-family: 'Quicksand';
 	font-size: 1.2rem
 }
-.col-lg-3 h1 {
+.col-lg-4 h1 {
 	font-size: 3rem
 }
-.contact .col-lg-3:before {
+.contact .col-lg-4:before {
 	bottom: 0;
 	left: 0;
 	right: 0;
 }
-.contact .col-lg-3 {
+.contact .col-lg-4 {
 	padding: 2rem
 }
 
