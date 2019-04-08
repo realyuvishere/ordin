@@ -1,5 +1,5 @@
 // Set the date we're counting down to
-var countDownDate = new Date("Apr 1, 2019 00:00:00").getTime();
+var countDownDate = new Date("Aug 6, 2019 00:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -37,3 +37,10 @@ setTimeout(function(){
 	$(".mainbod").removeClass("none");
 	$(".intro").addClass("none");
 }, 3600);
+$(window).scroll(function() {
+if ($(this).scrollTop() > 100){  
+    $('.navbar').addClass("navbar-hover")
+  } else {
+    $('.navbar').removeClass("navbar-hover")
+  }
+});
