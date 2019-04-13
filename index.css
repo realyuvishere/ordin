@@ -126,6 +126,7 @@ footer a:hover {
     height: auto;
     width: 100%;
     border-radius: 100%;
+    display: block
 }
 .fb {
 	font-size: 3rem;
@@ -151,7 +152,7 @@ footer a:hover {
 	position: relative;
 	z-index: 1;
 }
-a.active {
+li.active {
 	background-color: rgba(254, 73, 53, 0.7);
 }
 
@@ -274,6 +275,45 @@ ul, ol {
 .contact .col-lg-4 {
 	padding: 2rem
 }
+.imgcontainer {
+    position: relative;
+    width: 100%
+}
+.imgoverlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+    border-radius: 100%
+}
+.imgcontainer:hover .imgoverlay {
+    bottom: 0;
+    height: 100%;
+}
+.imgtext {
+    white-space: nowrap; 
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-family: 'Montserrat Alternates'
+}
+.fullimg {
+    width: 70%;
+    height: auto;
+    border: 3px #fff solid;
+    animation: 1s pic ease-out;
+    -webkit-animation: 1s pic ease-out;
+}
 
 @media screen and (max-width: 915px) {
 	.left, .right {
@@ -293,6 +333,8 @@ ul, ol {
     font-family: Loves;
     src: url(loves/LOVES.ttf);
 }
+@keyframes pic{from{opacity: 0;border-radius: 100%;}to{opacity: 1;border-radius: 0%}}
+@-webkit-keyframes pic{from{opacity: 0;border-radius: 100%;}to{opacity: 1;border-radius: 0%}}
 @keyframes totop{from{margin-top: 0px;opacity: 1}to{margin-top: -300px;opacity: 0}}
 @-webkit-keyframes totop{from{margin-top: 0px;opacity: 1}to{margin-top: -300px;opacity: 0}}
 @keyframes fromtop{from{margin-top: -300px;opacity: 0}to{margin-top: 0px;opacity: 1}}

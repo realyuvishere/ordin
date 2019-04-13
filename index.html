@@ -14,7 +14,8 @@
 		<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 		<link rel="icon" href="">
-		<link rel="stylesheet" href="https://yuvrajsharma07.github.io/Web_Development_Folder/Libraries/ripple_effect_v0.3/ripple_effect_v0.3/ripple_effect.min.css">
+		<link rel="stylesheet" href="https://yuvrajsharma07.github.io/Web_Development_Folder/templates/Libraries/ripple_effect_v0.3/ripple_effect_v0.3/ripple_effect.min.css">
+        <link rel="stylesheet" href="https://yuvrajsharma07.github.io/Web_Development_Folder/templates/Libraries/fullPage.js-master/dist/fullpage.min.css">
 		<link rel="stylesheet" href="index.css">
 	</head>
 	<body>
@@ -23,36 +24,306 @@
 		</div>
 		<div class="mainbod none">
 			<nav class="navbar fixed-top navbar-expand-md navbar-dark">
-                <img class="img-fluid logoimg" src="logo.png" placeholder="Ordin@trix 19.0">
+                <img class="img-fluid logoimg" src="lib/logo.png" placeholder="Ordin@trix 19.0">
                 <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navb" aria-controls="navb" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 			<div class="collapse navbar-collapse" id="navb">
-				<ul class="nav navbar-nav ml-auto mt-2 mt-lg-0" role="tablist">
+				<ul class="nav navbar-nav ml-auto mt-2 mt-lg-0">
 					<li class="">
-						<a class="nav-item nav-link active show" id="homeb" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+						<a data-menuanchor="home" class="nav-item nav-link" href="#home">Home</a>
 					</li>
 					<li class="">
-						<a class="nav-item nav-link" id="regis" data-toggle="tab" href="#reg" role="tab" aria-controls="reg" aria-selected="false">Register</a>
+						<a data-menuanchor="reg" class="nav-item nav-link" href="#reg">Register</a>
 					</li>
 					<li class="">
-						<a class="nav-item nav-link" id="event" data-toggle="tab" href="#eve" role="tab" aria-controls="eve" aria-selected="false">Events</a>
+						<a data-menuanchor="eve" class="nav-item nav-link" href="#eve">Events</a>
 					</li>
 					<li class="">
-						<a class="nav-item nav-link" id="contact" data-toggle="tab" href="#con" role="tab" aria-controls="con" aria-selected="false">Contact</a>
+						<a data-menuanchor="con" class="nav-item nav-link" href="#con">Contact</a>
 					</li>
 				</ul>
 			</div>
 		</nav>
-            <div id="fullpage">
-                <div class="section">One</div>
-                <div class="section">Three</div>
-                <div class="section">Four</div>
+            <div class="allmodals">
+                <div class="modal fade bd-example-modal-lg" id="mod1" tabindex="-1" role="dialog" aria-labelledby="innov" aria-hidden="true">
+							<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h2 class="modal-title text-center" id="script">Innovate@trix</h2>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body">
+										<ol>
+											<li>Only 5 participants per team are allowed.</li>
+											<li>This event accompanies individuals from various fields, make sure you include the following dudes - 
+                                                <ul>
+                                                    <li>Photographer</li>
+                                                    <li>Web Designer</li>
+                                                    <li>Movie maker/editor</li>
+                                                    <li>The 3D designer</li>
+                                                    <li>Music Programmer/Producer</li>
+                                                </ul>
+                                            </li>
+											<li>Teams should compete and qualify through the preliminary round in order to take the ultimate challenge on D-day in our school.</li>
+											<li>Topics for prelims will be released as soon as <b>15th July</b>, and for the finals will be announced on the spot.</li>
+										</ol>
+									</div>
+									<div class="modal-footer">
+										<p>Know whom to contact in case of queries, that would be <a href="" target="_blank">this guy</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+                <div class="modal fade bd-example-modal-lg" id="mod2" tabindex="-1" role="dialog" aria-labelledby="confer" aria-hidden="true">
+							<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h2 class="modal-title text-center" id="script">Innovate@trix</h2>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body">
+										<ol>
+											<li>Only 5 participants per team are allowed.</li>
+											<li>This event accompanies individuals from various fields, make sure you include the following dudes - 
+                                                <ul>
+                                                    <li>Photographer</li>
+                                                    <li>Web Designer</li>
+                                                    <li>Movie maker/editor</li>
+                                                    <li>The 3D designer</li>
+                                                    <li>Music Programmer/Producer</li>
+                                                </ul>
+                                            </li>
+											<li>Teams should compete and qualify through the preliminary round in order to take the ultimate challenge on D-day in our school.</li>
+											<li>Topics for prelims will be released as soon as <b>15th July</b>, and for the finals will be announced on the spot.</li>
+										</ol>
+									</div>
+									<div class="modal-footer">
+										<p>Know whom to contact in case of queries, that would be <a href="" target="_blank">this guy</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+                <div class="modal fade bd-example-modal-lg" id="mod3" tabindex="-1" role="dialog" aria-labelledby="bot" aria-hidden="true">
+							<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h2 class="modal-title text-center" id="script">Innovate@trix</h2>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body">
+										<ol>
+											<li>Only 5 participants per team are allowed.</li>
+											<li>This event accompanies individuals from various fields, make sure you include the following dudes - 
+                                                <ul>
+                                                    <li>Photographer</li>
+                                                    <li>Web Designer</li>
+                                                    <li>Movie maker/editor</li>
+                                                    <li>The 3D designer</li>
+                                                    <li>Music Programmer/Producer</li>
+                                                </ul>
+                                            </li>
+											<li>Teams should compete and qualify through the preliminary round in order to take the ultimate challenge on D-day in our school.</li>
+											<li>Topics for prelims will be released as soon as <b>15th July</b>, and for the finals will be announced on the spot.</li>
+										</ol>
+									</div>
+									<div class="modal-footer">
+										<p>Know whom to contact in case of queries, that would be <a href="" target="_blank">this guy</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+                <div class="modal fade bd-example-modal-lg" id="mod4" tabindex="-1" role="dialog" aria-labelledby="quiz" aria-hidden="true">
+							<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h2 class="modal-title text-center" id="crypt">Crypt@trix</h2>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body">
+										<ol>
+											<li>Only 2 participants per team will be allowed.</li>
+											<li>The event will be conducted on the mobile platform Goosechase.</li>
+										</ol>
+									</div>
+									<div class="modal-footer">
+										<p>Know whom to contact in case of queries, that would be <a href="" target="_blank">this guy</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+                <div class="modal fade bd-example-modal-lg" id="mod5" tabindex="-1" role="dialog" aria-labelledby="game" aria-hidden="true">
+							<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h2 class="modal-title text-center" id="game">Game@trix</h2>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body">
+										<ol>
+											<li>Only a squad of 4 participants per school is allowed.</li>
+											<li>The participants would have to join in on a custom room in PUBG Mobile at a specific time for the match to commence.</li>
+											<li>The top 5 squads will battle it out in another match, to be crowned the champions.</li>
+										</ol>
+									</div>
+									<div class="modal-footer">
+										<p>Know whom to contact in case of queries, that would be <a href="" target="_blank">this guy</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+                <div class="modal fade bd-example-modal-lg" id="mod6" tabindex="-1" role="dialog" aria-labelledby="pres" aria-hidden="true">
+							<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h2 class="modal-title text-center" id="script">Innovate@trix</h2>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body">
+										<ol>
+											<li>Only 5 participants per team are allowed.</li>
+											<li>This event accompanies individuals from various fields, make sure you include the following dudes - 
+                                                <ul>
+                                                    <li>Photographer</li>
+                                                    <li>Web Designer</li>
+                                                    <li>Movie maker/editor</li>
+                                                    <li>The 3D designer</li>
+                                                    <li>Music Programmer/Producer</li>
+                                                </ul>
+                                            </li>
+											<li>Teams should compete and qualify through the preliminary round in order to take the ultimate challenge on D-day in our school.</li>
+											<li>Topics for prelims will be released as soon as <b>15th July</b>, and for the finals will be announced on the spot.</li>
+										</ol>
+									</div>
+									<div class="modal-footer">
+										<p>Know whom to contact in case of queries, that would be <a href="" target="_blank">this guy</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+                <div class="modal fade bd-example-modal-lg" id="mod7" tabindex="-1" role="dialog" aria-labelledby="speed" aria-hidden="true">
+							<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h2 class="modal-title text-center" id="script">Innovate@trix</h2>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body">
+										<ol>
+											<li>Only 5 participants per team are allowed.</li>
+											<li>This event accompanies individuals from various fields, make sure you include the following dudes - 
+                                                <ul>
+                                                    <li>Photographer</li>
+                                                    <li>Web Designer</li>
+                                                    <li>Movie maker/editor</li>
+                                                    <li>The 3D designer</li>
+                                                    <li>Music Programmer/Producer</li>
+                                                </ul>
+                                            </li>
+											<li>Teams should compete and qualify through the preliminary round in order to take the ultimate challenge on D-day in our school.</li>
+											<li>Topics for prelims will be released as soon as <b>15th July</b>, and for the finals will be announced on the spot.</li>
+										</ol>
+									</div>
+									<div class="modal-footer">
+										<p>Know whom to contact in case of queries, that would be <a href="" target="_blank">this guy</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+                <div class="modal fade bd-example-modal-lg" id="mod8" tabindex="-1" role="dialog" aria-labelledby="ingen" aria-hidden="true">
+							<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h2 class="modal-title text-center" id="script">Innovate@trix</h2>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body">
+										<ol>
+											<li>Only 5 participants per team are allowed.</li>
+											<li>This event accompanies individuals from various fields, make sure you include the following dudes - 
+                                                <ul>
+                                                    <li>Photographer</li>
+                                                    <li>Web Designer</li>
+                                                    <li>Movie maker/editor</li>
+                                                    <li>The 3D designer</li>
+                                                    <li>Music Programmer/Producer</li>
+                                                </ul>
+                                            </li>
+											<li>Teams should compete and qualify through the preliminary round in order to take the ultimate challenge on D-day in our school.</li>
+											<li>Topics for prelims will be released as soon as <b>15th July</b>, and for the finals will be announced on the spot.</li>
+										</ol>
+									</div>
+									<div class="modal-footer">
+										<p>Know whom to contact in case of queries, that would be <a href="" target="_blank">this guy</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+                <div class="modal fade bd-example-modal-lg" id="pic1" tabindex="-1" role="dialog" aria-labelledby="pic1" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                        <center><img src="lib/yuvraj.JPG" class="fullimg"></center>
+                    </div>
+                </div>
+                <div class="modal fade bd-example-modal-lg" id="pic2" tabindex="-1" role="dialog" aria-labelledby="pic2" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                        <center><img src="lib/aman.jpg" class="fullimg"></center>
+                    </div>
+                </div>
+                <div class="modal fade bd-example-modal-lg" id="pic3" tabindex="-1" role="dialog" aria-labelledby="pic3" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                        <center><img src="lib/devansh.JPG" class="fullimg"></center>
+                    </div>
+                </div>
+                <div class="modal fade bd-example-modal-lg" id="pic4" tabindex="-1" role="dialog" aria-labelledby="pic4" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                        <center><img src="lib/drashik.JPG" class="fullimg"></center>
+                    </div>
+                </div>
+                <div class="modal fade bd-example-modal-lg" id="pic5" tabindex="-1" role="dialog" aria-labelledby="pic5" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                        <center><img src="lib/vaibhav.JPG" class="fullimg"></center>
+                    </div>
+                </div>
+                <div class="modal fade bd-example-modal-lg" id="pic6" tabindex="-1" role="dialog" aria-labelledby="pic6" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                        <center><img src="lib/kshitij.JPG" class="fullimg"></center>
+                    </div>
+                </div>
+                <div class="modal fade bd-example-modal-lg" id="pic7" tabindex="-1" role="dialog" aria-labelledby="pic7" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                        <center><img src="lib/dhruv.jpeg" class="fullimg"></center>
+                    </div>
+                </div>
+                <div class="modal fade bd-example-modal-lg" id="pic8" tabindex="-1" role="dialog" aria-labelledby="pic8" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                        <center><img src="lib/asees.JPG" class="fullimg"></center>
+                    </div>
+                </div>
+                <div class="modal fade bd-example-modal-lg" id="pic9" tabindex="-1" role="dialog" aria-labelledby="pic9" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                        <center><img src="lib/aaryan.jpeg" class="fullimg"></center>
+                    </div>
+                </div>
             </div>
-			<div class="banner"></div>
-			<div class="tab-content">
-				<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home">
-                    <div style="width: 100%; height: 600px; background-image: url(Banner.jpg); background-attachment: fixed;background-position: center;background-repeat: no-repeat; background-size: cover; position: relative"></div>
+            <div id="fullpage">
+                <div class="section" data-anchor="home">
+                    <div style="width: 100%; height: 600px; background-image: url(lib/Banner.jpg); background-attachment: fixed;background-position: center;background-repeat: no-repeat; background-size: cover; position: relative"></div>
 				<!-- <div id="slides" class="carousel slide" data-ride="carousel">
 					<ol class="carousel-indicators">
 						<li data-target="#slides" data-slide-to="0" class="active"></li>
@@ -101,9 +372,9 @@
 						<p class="container text-center"><i><b>"</b> Pyrotech is our brand name and we are known for our burning desire and passion to promote technology. <b>"</b></i></p>
 					</div>
 				</div>
-			</div>
-				<div class="tab-pane fade" id="reg" role="tabpanel" aria-labelledby="regis">
-					<div class="container">
+                </div>
+                <div class="section" data-anchor="reg">
+                    <div class="container">
 						<div class="banner"></div>
 						<h1 class="text-center">Registration Desk</h1>
 						<p class="container">Register yourself here for various events.</p>
@@ -410,9 +681,9 @@
 							<div class="banner"></div>
 						</div>
 					</div>
-				</div>
-				<div class="tab-pane fade" id="eve" role="tabpanel" aria-labelledby="event">
-					<div class="banner"></div>
+                </div>
+                    <div class="section" data-anchor="eve">
+                    <div class="banner"></div>
 					<div class="container">
 						<h1 class="text-center">The Events</h1>
 						<p>Because you have to know what all is in the store.</p>
@@ -425,235 +696,6 @@
 						</ol>
 					</div>
 					<div class="events container">
-						<div class="modal fade bd-example-modal-lg" id="mod1" tabindex="-1" role="dialog" aria-labelledby="innov" aria-hidden="true">
-							<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-								<div class="modal-content">
-									<div class="modal-header">
-										<h2 class="modal-title text-center" id="script">Innovate@trix</h2>
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-											<span aria-hidden="true">&times;</span>
-										</button>
-									</div>
-									<div class="modal-body">
-										<ol>
-											<li>Only 5 participants per team are allowed.</li>
-											<li>This event accompanies individuals from various fields, make sure you include the following dudes - 
-                                                <ul>
-                                                    <li>Photographer</li>
-                                                    <li>Web Designer</li>
-                                                    <li>Movie maker/editor</li>
-                                                    <li>The 3D designer</li>
-                                                    <li>Music Programmer/Producer</li>
-                                                </ul>
-                                            </li>
-											<li>Teams should compete and qualify through the preliminary round in order to take the ultimate challenge on D-day in our school.</li>
-											<li>Topics for prelims will be released as soon as <b>15th July</b>, and for the finals will be announced on the spot.</li>
-										</ol>
-									</div>
-									<div class="modal-footer">
-										<p>Know whom to contact in case of queries, that would be <a href="" target="_blank">this guy</a></p>
-									</div>
-								</div>
-							</div>
-						</div>
-                        <div class="modal fade bd-example-modal-lg" id="mod2" tabindex="-1" role="dialog" aria-labelledby="confer" aria-hidden="true">
-							<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-								<div class="modal-content">
-									<div class="modal-header">
-										<h2 class="modal-title text-center" id="script">Innovate@trix</h2>
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-											<span aria-hidden="true">&times;</span>
-										</button>
-									</div>
-									<div class="modal-body">
-										<ol>
-											<li>Only 5 participants per team are allowed.</li>
-											<li>This event accompanies individuals from various fields, make sure you include the following dudes - 
-                                                <ul>
-                                                    <li>Photographer</li>
-                                                    <li>Web Designer</li>
-                                                    <li>Movie maker/editor</li>
-                                                    <li>The 3D designer</li>
-                                                    <li>Music Programmer/Producer</li>
-                                                </ul>
-                                            </li>
-											<li>Teams should compete and qualify through the preliminary round in order to take the ultimate challenge on D-day in our school.</li>
-											<li>Topics for prelims will be released as soon as <b>15th July</b>, and for the finals will be announced on the spot.</li>
-										</ol>
-									</div>
-									<div class="modal-footer">
-										<p>Know whom to contact in case of queries, that would be <a href="" target="_blank">this guy</a></p>
-									</div>
-								</div>
-							</div>
-						</div>
-                        <div class="modal fade bd-example-modal-lg" id="mod3" tabindex="-1" role="dialog" aria-labelledby="bot" aria-hidden="true">
-							<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-								<div class="modal-content">
-									<div class="modal-header">
-										<h2 class="modal-title text-center" id="script">Innovate@trix</h2>
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-											<span aria-hidden="true">&times;</span>
-										</button>
-									</div>
-									<div class="modal-body">
-										<ol>
-											<li>Only 5 participants per team are allowed.</li>
-											<li>This event accompanies individuals from various fields, make sure you include the following dudes - 
-                                                <ul>
-                                                    <li>Photographer</li>
-                                                    <li>Web Designer</li>
-                                                    <li>Movie maker/editor</li>
-                                                    <li>The 3D designer</li>
-                                                    <li>Music Programmer/Producer</li>
-                                                </ul>
-                                            </li>
-											<li>Teams should compete and qualify through the preliminary round in order to take the ultimate challenge on D-day in our school.</li>
-											<li>Topics for prelims will be released as soon as <b>15th July</b>, and for the finals will be announced on the spot.</li>
-										</ol>
-									</div>
-									<div class="modal-footer">
-										<p>Know whom to contact in case of queries, that would be <a href="" target="_blank">this guy</a></p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="modal fade bd-example-modal-lg" id="mod4" tabindex="-1" role="dialog" aria-labelledby="quiz" aria-hidden="true">
-							<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-								<div class="modal-content">
-									<div class="modal-header">
-										<h2 class="modal-title text-center" id="crypt">Crypt@trix</h2>
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-											<span aria-hidden="true">&times;</span>
-										</button>
-									</div>
-									<div class="modal-body">
-										<ol>
-											<li>Only 2 participants per team will be allowed.</li>
-											<li>The event will be conducted on the mobile platform Goosechase.</li>
-										</ol>
-									</div>
-									<div class="modal-footer">
-										<p>Know whom to contact in case of queries, that would be <a href="" target="_blank">this guy</a></p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="modal fade bd-example-modal-lg" id="mod5" tabindex="-1" role="dialog" aria-labelledby="game" aria-hidden="true">
-							<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-								<div class="modal-content">
-									<div class="modal-header">
-										<h2 class="modal-title text-center" id="game">Game@trix</h2>
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-											<span aria-hidden="true">&times;</span>
-										</button>
-									</div>
-									<div class="modal-body">
-										<ol>
-											<li>Only a squad of 4 participants per school is allowed.</li>
-											<li>The participants would have to join in on a custom room in PUBG Mobile at a specific time for the match to commence.</li>
-											<li>The top 5 squads will battle it out in another match, to be crowned the champions.</li>
-										</ol>
-									</div>
-									<div class="modal-footer">
-										<p>Know whom to contact in case of queries, that would be <a href="" target="_blank">this guy</a></p>
-									</div>
-								</div>
-							</div>
-						</div>
-                        <div class="modal fade bd-example-modal-lg" id="mod6" tabindex="-1" role="dialog" aria-labelledby="pres" aria-hidden="true">
-							<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-								<div class="modal-content">
-									<div class="modal-header">
-										<h2 class="modal-title text-center" id="script">Innovate@trix</h2>
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-											<span aria-hidden="true">&times;</span>
-										</button>
-									</div>
-									<div class="modal-body">
-										<ol>
-											<li>Only 5 participants per team are allowed.</li>
-											<li>This event accompanies individuals from various fields, make sure you include the following dudes - 
-                                                <ul>
-                                                    <li>Photographer</li>
-                                                    <li>Web Designer</li>
-                                                    <li>Movie maker/editor</li>
-                                                    <li>The 3D designer</li>
-                                                    <li>Music Programmer/Producer</li>
-                                                </ul>
-                                            </li>
-											<li>Teams should compete and qualify through the preliminary round in order to take the ultimate challenge on D-day in our school.</li>
-											<li>Topics for prelims will be released as soon as <b>15th July</b>, and for the finals will be announced on the spot.</li>
-										</ol>
-									</div>
-									<div class="modal-footer">
-										<p>Know whom to contact in case of queries, that would be <a href="" target="_blank">this guy</a></p>
-									</div>
-								</div>
-							</div>
-						</div>
-                        <div class="modal fade bd-example-modal-lg" id="mod7" tabindex="-1" role="dialog" aria-labelledby="speed" aria-hidden="true">
-							<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-								<div class="modal-content">
-									<div class="modal-header">
-										<h2 class="modal-title text-center" id="script">Innovate@trix</h2>
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-											<span aria-hidden="true">&times;</span>
-										</button>
-									</div>
-									<div class="modal-body">
-										<ol>
-											<li>Only 5 participants per team are allowed.</li>
-											<li>This event accompanies individuals from various fields, make sure you include the following dudes - 
-                                                <ul>
-                                                    <li>Photographer</li>
-                                                    <li>Web Designer</li>
-                                                    <li>Movie maker/editor</li>
-                                                    <li>The 3D designer</li>
-                                                    <li>Music Programmer/Producer</li>
-                                                </ul>
-                                            </li>
-											<li>Teams should compete and qualify through the preliminary round in order to take the ultimate challenge on D-day in our school.</li>
-											<li>Topics for prelims will be released as soon as <b>15th July</b>, and for the finals will be announced on the spot.</li>
-										</ol>
-									</div>
-									<div class="modal-footer">
-										<p>Know whom to contact in case of queries, that would be <a href="" target="_blank">this guy</a></p>
-									</div>
-								</div>
-							</div>
-						</div>
-                        <div class="modal fade bd-example-modal-lg" id="mod8" tabindex="-1" role="dialog" aria-labelledby="ingen" aria-hidden="true">
-							<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-								<div class="modal-content">
-									<div class="modal-header">
-										<h2 class="modal-title text-center" id="script">Innovate@trix</h2>
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-											<span aria-hidden="true">&times;</span>
-										</button>
-									</div>
-									<div class="modal-body">
-										<ol>
-											<li>Only 5 participants per team are allowed.</li>
-											<li>This event accompanies individuals from various fields, make sure you include the following dudes - 
-                                                <ul>
-                                                    <li>Photographer</li>
-                                                    <li>Web Designer</li>
-                                                    <li>Movie maker/editor</li>
-                                                    <li>The 3D designer</li>
-                                                    <li>Music Programmer/Producer</li>
-                                                </ul>
-                                            </li>
-											<li>Teams should compete and qualify through the preliminary round in order to take the ultimate challenge on D-day in our school.</li>
-											<li>Topics for prelims will be released as soon as <b>15th July</b>, and for the finals will be announced on the spot.</li>
-										</ol>
-									</div>
-									<div class="modal-footer">
-										<p>Know whom to contact in case of queries, that would be <a href="" target="_blank">this guy</a></p>
-									</div>
-								</div>
-							</div>
-						</div>
 						<h2>Events</h2>
 						<div class="banner"></div>
 						<div class="row">
@@ -706,30 +748,45 @@
 						</div>
 						<div class="banner"></div>
 					</div>
-				</div>
-				<div class="tab-pane fade" id="con" role="tabpanel" aria-labelledby="contact">
-					<div class="banner"></div>
+                </div>
+                    <div class="section" data-anchor="con">
+                    <div class="banner"></div>
 					<div class="container">
 						<h1 class="text-center">The A - Team</h1>
 						<div class="banner"></div>
 						<div class="contact container">
 							<div class="row">
 								<div class="col-lg-4 col-md-12 text-center">
-                                    <img class="headsimg" src="yuvraj.JPG">
+                                    <div class="imgcontainer">
+                                        <img class="headsimg" src="lib/yuvraj.JPG">
+                                        <div class="imgoverlay" data-toggle="modal" data-target="#pic1">
+                                            <div class="imgtext">Click to see the full image</div>
+                                        </div>
+                                    </div>
 									<h1>Yuvraj Sharma</h1>
 									<h2>Head of Web Designing</h2>
 									<p>Can do stuff..</p>
 									<i class="fas fa-inbox"></i> billiondollarone07@gmail.com
 								</div>
 								<div class="col-lg-4 col-md-12 text-center">
-                                    <img class="headsimg" src="aman.jpg">
+                                    <div class="imgcontainer">
+                                        <img class="headsimg" src="lib/aman.jpg">
+                                        <div class="imgoverlay" data-toggle="modal" data-target="#pic2">
+                                            <div class="imgtext">Click to see the full image</div>
+                                        </div>
+                                    </div>
 									<h1>Aman Agarwal</h1>
 									<h2>Head of Robotics</h2>
 									<p>Probably building a cyborg</p>
 									<i class="fas fa-inbox"></i> amannagarwal13@gmail.com
 								</div>
 								<div class="col-lg-4 col-md-12 text-center">
-                                    <img class="headsimg" src="devansh.JPG">
+                                    <div class="imgcontainer">
+                                        <img class="headsimg" src="lib/devansh.JPG">
+                                        <div class="imgoverlay" data-toggle="modal" data-target="#pic3">
+                                            <div class="imgtext">Click to see the full image</div>
+                                        </div>
+                                    </div>
 									<h1>Devansh Choudhary</h1>
 									<h2>Head of Robotics</h2>
 									<p>Probably building a cyborg too</p>
@@ -739,21 +796,36 @@
 							<div class="banner"></div>
 							<div class="row">
                                 <div class="col-lg-4 col-md-12 text-center">
-                                    <img class="headsimg" src="drashik.JPG">
+                                    <div class="imgcontainer">
+                                        <img class="headsimg" src="lib/drashik.JPG">
+                                        <div class="imgoverlay" data-toggle="modal" data-target="#pic4">
+                                            <div class="imgtext">Click to see the full image</div>
+                                        </div>
+                                    </div>
 									<h1>Drashik Chhabra</h1>
 									<h2>Head of Creative Graphics</h2>
 									<p>One helluva virtual artist that looks like a teddy</p>
 									<i class="fas fa-inbox"></i> drashikc@gmail.com
 								</div>
 								<div class="col-lg-4 col-md-12 text-center">
-                                    <img class="headsimg" src="vaibhav.JPG">
+                                    <div class="imgcontainer">
+                                        <img class="headsimg" src="lib/vaibhav.JPG">
+                                        <div class="imgoverlay" data-toggle="modal" data-target="#pic5">
+                                            <div class="imgtext">Click to see the full image</div>
+                                        </div>
+                                    </div>
 									<h1>Vaibhav Bhardwaj</h1>
 									<h2>Head of Creative Graphics</h2>
 									<p>Another virtual artist but rather cool</p>
 									<i class="fas fa-inbox"></i> veb20402@gmail.com
 								</div>
 								<div class="col-lg-4 col-md-12 text-center">
-                                    <img class="headsimg" src="kshitij.JPG">
+                                    <div class="imgcontainer">
+                                        <img class="headsimg" src="lib/kshitij.JPG">
+                                        <div class="imgoverlay" data-toggle="modal" data-target="#pic6">
+                                            <div class="imgtext">Click to see the full image</div>
+                                        </div>
+                                    </div>
 									<h1>Kshitij Pandey</h1>
 									<h2>Head of 3D Modelling</h2>
 									<p>Yet another virtual artist because Pyrotechs are creative</p>
@@ -763,21 +835,36 @@
 							<div class="banner"></div>
 							<div class="row">
                                 <div class="col-lg-4 col-md-12 text-center">
-                                    <img class="headsimg" src="dhruv.jpeg">
+                                    <div class="imgcontainer">
+                                        <img class="headsimg" src="lib/dhruv.jpeg">
+                                        <div class="imgoverlay" data-toggle="modal" data-target="#pic7">
+                                            <div class="imgtext">Click to see the full image</div>
+                                        </div>
+                                    </div>
 									<h1>Dhruv Bahri</h1>
 									<h2>Head of Movie Making</h2>
 									<p>The all-rounder perfectionist in the line</p>
 									<i class="fas fa-inbox"></i> dhruvbahri@outlook.com
 								</div>
 								<div class="col-lg-4 col-md-12 text-center">
-                                    <img class="headsimg" src="asees.JPG">
+                                    <div class="imgcontainer">
+                                        <img class="headsimg" src="lib/asees.JPG">
+                                        <div class="imgoverlay" data-toggle="modal" data-target="#pic8">
+                                            <div class="imgtext">Click to see the full image</div>
+                                        </div>
+                                    </div>
 									<h1>Asees Singh</h1>
 									<h2>Head of Movie Making</h2>
 									<p>The tech guru</p>
 									<i class="fas fa-inbox"></i> aseessingh4@gmail.com
 								</div>
 								<div class="col-lg-4 col-md-12 text-center">
-                                    <img class="headsimg" src="aaryan.jpeg">
+                                    <div class="imgcontainer">
+                                        <img class="headsimg" src="lib/aaryan.jpeg">
+                                        <div class="imgoverlay" data-toggle="modal" data-target="#pic9">
+                                            <div class="imgtext">Click to see the full image</div>
+                                        </div>
+                                    </div>
 									<h1>Aaryan Kohli</h1>
 									<h2>Head of Photography</h2>
 									<p>The guy with the camera who clicks a lot of pictures for no reason</p>
@@ -805,34 +892,47 @@
 						</div>
 					</div>
 				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7008.233786192498!2d77.15736990229725!3d28.566252389974288!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1da64b31037f%3A0x9fe8114b5940d45c!2sTagore+International+School!5e0!3m2!1sen!2sin!4v1513607065658" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-			</div>
-			</div>
-			<footer>
-				<div class="left text-center">
-					<a href="index.html" style=""><img class="img-fluid" src="logo.png" placeholder="Ordin@trix 19.0"></a>
-					<div class="fdiv">
-						&copy; All Rights Reserved. Pyrotech 2019<br>
-						Website developed by Yuvraj Sharma and the Pyrotech team<br>
-						Tagore International School<br>
-						Vasant Vihar
-					</div>
-				</div>
-				<div class="right">
-					<div class="right">
-						<ul>
-							<a href="login.php"><li>Your Account</li></a>
-							<a href="register.php"><li>Register</li></a>
-							<a href="sponsor.php"><li>Sponsor</li></a>
-						</ul>
-					</div>
-				</div>
-			</footer>
+                </div>
+                    <!--<div class="section">
+                        <footer>
+                            <div class="left text-center">
+                                <a href="index.html" style=""><img class="img-fluid" src="lib/logo.png" placeholder="Ordin@trix 19.0"></a>
+                                <div class="fdiv">
+                                    &copy; All Rights Reserved. Pyrotech 2019<br>
+                                    Website developed by Yuvraj Sharma and the Pyrotech team<br>
+                                    Tagore International School<br>
+                                    Vasant Vihar
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="right">
+                                    <ul>
+                                        <a href="login.php"><li>Your Account</li></a>
+                                        <a href="register.php"><li>Register</li></a>
+                                        <a href="sponsor.php"><li>Sponsor</li></a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </footer>
+                    </div>-->
+            </div>
+                <!--
+			<div class="tab-content">
+				<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home"></div>
+				<div class="tab-pane fade" id="reg" role="tabpanel" aria-labelledby="regis"></div>
+				<div class="tab-pane fade" id="eve" role="tabpanel" aria-labelledby="event"></div>
+				<div class="tab-pane fade" id="con" role="tabpanel" aria-labelledby="contact"></div>
+			</div>-->
 		</div>
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-		<script src="https://yuvrajsharma07.github.io/Web_Development_Folder/Libraries/ripple_effect_v0.3/ripple_effect_v0.3/ripple_effect.min.js"></script>
-		<script defer src="https://use.fontawesome.com/releases/v5.4.1/js/all.js" integrity="sha384-L469/ELG4Bg9sDQbl0hvjMq8pOcqFgkSpwhwnslzvVVGpDjYJ6wJJyYjvG3u8XW7" crossorigin="anonymous"></script>
-		<script src="index.js"></script>
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+            <script src="https://yuvrajsharma07.github.io/Web_Development_Folder/templates/Libraries/ripple_effect_v0.3/ripple_effect_v0.3/ripple_effect.min.js"></script>
+            <script src="https://yuvrajsharma07.github.io/Web_Development_Folder/templates/Libraries/fullPage.js-master/vendors/easings.min.js"></script>
+            <script src="https://yuvrajsharma07.github.io/Web_Development_Folder/templates/Libraries/fullPage.js-master/vendors/scrolloverflow.min.js"></script>
+            <script src="https://yuvrajsharma07.github.io/Web_Development_Folder/templates/Libraries/fullPage.js-master/dist/fullpage.min.js"></script>
+            <script src="https://yuvrajsharma07.github.io/Web_Development_Folder/templates/Libraries/fullPage.js-master/dist/fullpage.extensions.min.js"></script>
+            <script defer src="https://use.fontawesome.com/releases/v5.4.1/js/all.js" integrity="sha384-L469/ELG4Bg9sDQbl0hvjMq8pOcqFgkSpwhwnslzvVVGpDjYJ6wJJyYjvG3u8XW7" crossorigin="anonymous"></script>
+            <script src="index.js"></script>
 	</body>
 </html>
