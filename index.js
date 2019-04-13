@@ -46,40 +46,7 @@ if ($(this).scrollTop() > 100){
 });
 $(document).ready(function() {
 	$('#fullpage').fullpage({
-		//options here
-		autoScrolling:true,
-        fadingEffect: true,
-        scrollHorizontally: true,
+        scrollOverflow: true,
         menu: '#navb'
 	});
 });
-/*
-$(document).on('scroll', function() {
-    if( $(this).scrollTop() >= $('#sec1').position().top ){
-		$("#homeb").addClass("active");
-    } else {
-		$("#homeb").removeClass("active");
-	}
-});
-$(document).on('scroll', function() {
-    if( $(this).scrollTop() >= $('#sec2').position().top ){
-		$("#regis").addClass("active");
-    } else {
-		$("#regis").removeClass("active");
-	}
-});
-$(document).on('scroll', function() {
-    if( $(this).scrollTop() >= $('#sec3').position().top ){
-		$("#event").addClass("active");
-    } else {
-		$("#event").removeClass("active");
-	}
-});
-$(document).on('scroll', function() {
-    if( $(this).scrollTop() >= $('#sec4').position().top ){
-		$("#contact").addClass("active");
-    } else {
-		$("#contact").removeClass("active");
-	}
-});
-*/
