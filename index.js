@@ -47,6 +47,7 @@ if ($(this).scrollTop() > 100){
 $(document).ready(function() {
 	$('#fullpage').fullpage({
         scrollOverflow: true,
-        menu: '#navb'
+        menu: '#navb',
+        recordHistory: false,
 	});
 });

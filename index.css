@@ -277,7 +277,8 @@ ul, ol {
 }
 .imgcontainer {
     position: relative;
-    width: 100%
+    width: 100%;
+    border-radius: 100%
 }
 .imgoverlay {
     position: absolute;
