@@ -26,6 +26,7 @@ var x = setInterval(function() {
         document.getElementById("demo").innerHTML = "Let's Go";
     }
 }, 1000);
+/*
 setTimeout(function(){
 	$(".logo").addClass("lwhite");
 	$('body').css('background-color', '#000');
@@ -36,7 +37,7 @@ setTimeout(function(){
 setTimeout(function(){
 	$(".mainbod").removeClass("none");
 	$(".intro").addClass("none");
-}, 3600);
+}, 3600);*/
 $(window).scroll(function() {
 if ($(this).scrollTop() > 100){  
     $('.navbar').addClass("navbar-hover")
@@ -49,5 +50,6 @@ $(document).ready(function() {
         scrollOverflow: true,
         menu: '#navb',
         recordHistory: false,
+        sectionsColor: ['#000', '#111', '#222', '#333']
 	});
 });
