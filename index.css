@@ -179,26 +179,14 @@ li.active {
 	color: #fff
 }
 .intro {
-	height: 60vh;
+	height: 100vh;
 	width: 100%;
-	padding-top: 40vh;
 	text-align: center;
-	transition: .2s ease-out
+	transition: .2s ease-out;
+    background-color: #000;
 }
 .navbar-brand {
-    padding: 0px
-}
-.logo {
-	font-family: 'Loves';
-	font-size: 5rem;
-	animation: 4s typing;
-	-webkit-animation: 4s typing;
-	margin: 0 auto;
-	overflow: hidden;
-	white-space: nowrap;
-	font-weight: 500;
-	color: rgb(254, 73, 53);
-	transition: .4s ease-out
+    padding: 0px;
 }
 .int2 {
 	animation: 1.5s totop ease-out;
@@ -314,6 +302,40 @@ ul, ol {
     border: 3px #fff solid;
     animation: 1s pic ease-out;
     -webkit-animation: 1s pic ease-out;
+}
+/* loader */
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0)
+  }
+  100% {
+    transform: rotate(360deg)
+  }
+}
+.lds-ring > div{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  border-radius: 60%;
+  border: 20px solid #fff;
+  border-color: #fff transparent transparent transparent;
+  animation: lds-ring 1.5s cubic-bezier(0.5,0,0.5,1) infinite;
+}
+.lds-ring > div:nth-child(2) {
+  animation-delay: .195s;
+    border-color: #006699 transparent transparent transparent
+}
+.lds-ring > div:nth-child(3) {
+  animation-delay: .39s;
+    border-color: #fd0044 transparent transparent transparent
+    
+}
+.lds-ring > div:nth-child(4) {
+  animation-delay: .585s;
+    border-color: #ffd002 transparent transparent transparent
+    
 }
 
 @media screen and (max-width: 915px) {

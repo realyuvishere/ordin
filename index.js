@@ -1,3 +1,8 @@
+$(window).load(function(){
+    $('.intro').fadeOut("slow", function(){
+        $(".mainbod").removeClass("none");
+    })
+});
 // Set the date we're counting down to
 var countDownDate = new Date("Aug 6, 2019 00:00:00").getTime();
 
@@ -26,18 +31,6 @@ var x = setInterval(function() {
         document.getElementById("demo").innerHTML = "Let's Go";
     }
 }, 1000);
-/*
-setTimeout(function(){
-	$(".logo").addClass("lwhite");
-	$('body').css('background-color', '#000');
-}, 1500);
-setTimeout(function(){
-	$(".intro").addClass("int2");
-}, 2500);
-setTimeout(function(){
-	$(".mainbod").removeClass("none");
-	$(".intro").addClass("none");
-}, 3600);*/
 $(window).scroll(function() {
 if ($(this).scrollTop() > 100){  
     $('.navbar').addClass("navbar-hover")
