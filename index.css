@@ -329,6 +329,9 @@ ul, ol {
 	.fdiv, footer .left {
 		text-align: left !important
 	}
+    .fullimg {
+        width: 100%
+    }
 }
 @font-face {
     font-family: Loves;
