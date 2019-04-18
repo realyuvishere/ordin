@@ -1,10 +1,3 @@
-$(window).load(function () {
-    $(".intro").addClass("int2");
-    setTimeout(function(){
-        $(".mainbod").removeClass("none");
-        $(".intro").addClass("none");
-    }, 3600);
-});
 // Set the date we're counting down to
 var countDownDate = new Date("Aug 6, 2019 00:00:00").getTime();
 
