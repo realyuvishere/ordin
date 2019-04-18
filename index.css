@@ -184,6 +184,7 @@ li.active {
 	text-align: center;
 	transition: .2s ease-out;
     background-color: #000;
+    display: block
 }
 .navbar-brand {
     padding: 0px;
@@ -313,27 +314,27 @@ ul, ol {
   }
 }
 .lds-ring > div{
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  width: 80%;
-  height: 80%;
-  border-radius: 60%;
-  border: 20px solid #fff;
-  border-color: #fff transparent transparent transparent;
-  animation: lds-ring 1.5s cubic-bezier(0.5,0,0.5,1) infinite;
+    position: absolute;
+    left: 35%;
+    top: 10%;
+    padding: 15%;
+    margin: auto;
+    border-radius: 60%;
+    border: 20px solid #fff;
+    border-color: #fff transparent transparent transparent;
+    animation: lds-ring 1.5s cubic-bezier(0.5,0,0.5,1) infinite;
 }
 .lds-ring > div:nth-child(2) {
-  animation-delay: .195s;
+    animation-delay: .2s;
     border-color: #006699 transparent transparent transparent
 }
 .lds-ring > div:nth-child(3) {
-  animation-delay: .39s;
+    animation-delay: .4s;
     border-color: #fd0044 transparent transparent transparent
     
 }
 .lds-ring > div:nth-child(4) {
-  animation-delay: .585s;
+    animation-delay: .6s;
     border-color: #ffd002 transparent transparent transparent
     
 }
@@ -353,6 +354,10 @@ ul, ol {
 	}
     .fullimg {
         width: 100%
+    }
+    .lds-ring > div {
+        padding: 20%;
+        left: 25%
     }
 }
 @font-face {
