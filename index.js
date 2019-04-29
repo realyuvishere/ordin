@@ -3,7 +3,7 @@ $(document).ready(function() {
         scrollOverflow: true,
         menu: '#navb',
         recordHistory: false,
-        sectionsColor: ['#111', '#111', '#222', '#333']
+        sectionsColor: ['#222', '#111', '#222', '#333']
 	});
 });
 // Set the date we're counting down to
@@ -34,10 +34,3 @@ var x = setInterval(function() {
         document.getElementById("demo").innerHTML = "Let's Go";
     }
 }, 1000);
-$(window).scroll(function() {
-if ($(this).scrollTop() > 100){  
-    $('.navbar').addClass("navbar-hover")
-  } else {
-    $('.navbar').removeClass("navbar-hover")
-  }
-});

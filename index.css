@@ -33,12 +33,6 @@ p {
 	-webkit-animation: 1s fromtop ease-out;
     transition: .4s ease-out
 }
-.navbar-hover {
-    opacity: .4
-}
-.navbar-hover:hover {
-    opacity: .9
-}
 .banner {
 	width: 100%;
 	height: 5rem
