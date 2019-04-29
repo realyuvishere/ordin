@@ -4,8 +4,13 @@ $(document).ready(function() {
         menu: '#navb',
         recordHistory: false,
         sectionsColor: ['#222', '#111', '#222', '#333'],
-        afterRender: function loader(){
-            document.getElementById("intro").style.display = "none";
+        afterRender: function(){
+            $(".lds-css").fadeOut("slow");
+            $('.intro').delay(1000).fadeOut("slow");
+            setTimeout(function(){
+                $(".mainbod").css('opacity', '1');
+                $(".intro").addClass("none");
+            }, 2000)
         }
 	});
 });
