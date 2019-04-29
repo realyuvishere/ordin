@@ -1,8 +1,6 @@
 body {
 	background-color: #fff;
 	transition: .4s ease-out;
-	animation: 1s opacity ease-out;
-	-webkit-animation: 1s opacity ease-out;
 }
 ::selection {
 	background: #f9f9f9;
