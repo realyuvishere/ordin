@@ -31,7 +31,7 @@ p {
     padding: 0px;
 	animation: 1s fromtop ease-out;
 	-webkit-animation: 1s fromtop ease-out;
-    transition: .4s ease-out
+    transition: .4s ease-out;
 }
 .banner {
 	width: 100%;

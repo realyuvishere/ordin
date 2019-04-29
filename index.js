@@ -3,7 +3,10 @@ $(document).ready(function() {
         scrollOverflow: true,
         menu: '#navb',
         recordHistory: false,
-        sectionsColor: ['#222', '#111', '#222', '#333']
+        sectionsColor: ['#222', '#111', '#222', '#333'],
+        afterRender: function loader(){
+            document.getElementById("intro").style.display = "none";
+        }
 	});
 });
 // Set the date we're counting down to
