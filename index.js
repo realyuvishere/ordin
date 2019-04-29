@@ -3,13 +3,9 @@ $(document).ready(function() {
         scrollOverflow: true,
         menu: '#navb',
         recordHistory: false,
-        sectionsColor: ['#000', '#111', '#222', '#333']
+        sectionsColor: ['#111', '#111', '#222', '#333']
 	});
 });
-function loader(){
-    document.getElementById("intro").style.display = "none";
-    document.getElementById("mainbod").style.display = "block";
-}
 // Set the date we're counting down to
 var countDownDate = new Date("Aug 6, 2019 00:00:00").getTime();
 
