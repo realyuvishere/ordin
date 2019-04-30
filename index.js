@@ -2,7 +2,7 @@ $(document).ready(function() {
 	$('#fullpage').fullpage({
         scrollOverflow: true,
         menu: '#navb',
-	autoScrolling: false,
+	autoScrolling: true,
         recordHistory: false,
         sectionsColor: ['#222', '#111', '#222', '#333'],
         afterRender: function(){
