@@ -1,8 +1,7 @@
-/*$(document).ready(function() {
+$(document).ready(function() {
 	$('#fullpage').fullpage({
-        scrollOverflow: false,
+        scrollOverflow: true,
         menu: '#navb',
-	autoScrolling: false,
         recordHistory: false,
         sectionsColor: ['#222', '#111', '#222', '#333'],
         afterRender: function(){
@@ -14,7 +13,7 @@
             }, 2000)
         }
 	});
-});*/
+});
 // Set the date we're counting down to
 var countDownDate = new Date("Aug 6, 2019 00:00:00").getTime();
 
