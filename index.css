@@ -55,16 +55,20 @@ p {
 }
 .cntdwn div {
 	padding: 3rem;
-	background-color: #333;
+	background-color: rgba(199, 4, 0);
+    opacity: 0.53;
 	color: #fff;
-	font-size: 5rem;
+	font-size: 4.5rem;
 	font-family: 'Loves';
 	letter-spacing: 1.5rem;
+    animation: pulse 1s cubic-bezier(0.5,0,0.5,1) infinite;
+    -webkit-animation: pulse 1s cubic-bezier(0.5,0,0.5,1) infinite;
 }
 .cntdwn p {
 	text-align: right;
 	font-size: 3.5rem;
-	padding: 3rem
+	padding: 3rem;
+    color:white;
 }
 footer {
 	width: 100%;
@@ -174,7 +178,7 @@ li.active {
 	width: 100%;
 	text-align: center;
 	transition: .2s ease-out;
-    background-color: rgba(0,0,0,0.4);
+    background-color: #000;
     display: block;
     z-index: 999;
 }
@@ -256,6 +260,16 @@ ul, ol {
 .contact .col-lg-4 {
 	padding: 2rem
 }
+.eventhead{
+    border-width:5px;
+    font-size: 15px;
+    font-family: loves;
+    color:darkgray;
+}
+th{
+    padding-left: 15px;
+    padding-right: 15px;
+}
 .imgcontainer {
     position: relative;
     width: 100%;
@@ -312,21 +326,21 @@ ul, ol {
     padding: 15%;
     margin: auto;
     border-radius: 60%;
-    border: 20px solid #fff;
-    border-color: #fff transparent transparent transparent;
+    border: 20px solid #67aeff;
+    border-color: #36d2d6 transparent transparent transparent;
     animation: lds-ring 1.5s cubic-bezier(0.5,0,0.5,1) infinite;
 }
 .lds-ring > div:nth-child(2) {
     animation-delay: .2s;
-    border-color: #006699 transparent transparent transparent
+    border-color: #3192ff transparent transparent transparent
 }
 .lds-ring > div:nth-child(3) {
     animation-delay: .4s;
-    border-color: #fd0044 transparent transparent transparent
+    border-color: #3192ff transparent transparent transparent
 }
 .lds-ring > div:nth-child(4) {
     animation-delay: .6s;
-    border-color: #ffd002 transparent transparent transparent
+    border-color: #006699 transparent transparent transparent
 }
 .lds-ring > div:nth-child(5) {
     color: #fff;
@@ -378,3 +392,5 @@ ul, ol {
 @-webkit-keyframes typing{from{width: 0}to{width: 100%}}
 @keyframes opacity{from{opacity: 0}to{opacity: 1}}
 @-webkit-keyframes opacity{from{opacity: 0}to{opacity: 1}}
+@keyframes pulse{0%{opacity:.53;}50%{opacity: .8}100%{opacity: .53}}
+@-webkit-keyframes pulse{0%{opacity:.8;}50%{opacity: .53}100%{opacity: .8}}

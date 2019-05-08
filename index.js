@@ -42,3 +42,14 @@ var x = setInterval(function() {
         document.getElementById("demo").innerHTML = "Let's Go";
     }
 }, 1000);
+
+//Event Head Contact Modal
+
+function con() {
+  var eventhead = document.getElementById("eventhead");
+  if (eventhead.style.display === "none") {
+    eventhead.style.display = "block";
+  } else {
+    eventhead.style.display = "none";
+  }
+}
