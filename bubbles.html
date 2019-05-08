@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <style>
+          html, body {
+              width: 100%;
+              height: 100%;
+              margin: 0;
+              padding: 0
+          }
+          #myCanvas {
+              width: 100%;
+              height: 100%;
+          }
+      </style>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/alphabet.js"></script>
+  </head>
+  <body>
+    <canvas id="myCanvas"></canvas>
+    <script type="text/javascript" src="http://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/bubbles.js"></script>
+    <script type="text/javascript">
+        var red = [0, 100, 63];
+var orange = [40, 100, 60];
+var green = [75, 100, 40];
+var blue = [196, 77, 55];
+var purple = [280, 50, 60];
+
+var myName = "Ordin@trix 19.0";
+var letterColors = [red, orange, green, blue, purple];
+if(10 > 3) {
+    bubbleShape = "circle";
+}
+
+else {
+    bubbleShape = "square";
+}
+
+drawName(myName, letterColors);
+bounceBubbles();
+      </script>
+  </body>
+</html>

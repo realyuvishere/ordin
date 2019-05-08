@@ -11,7 +11,15 @@ $(document).ready(function() {
                 $(".mainbod").css('opacity', '1');
                 $(".intro").addClass("none");
             }, 2000);
-        }
+        },
+        onLeave: function(origin, destination, direction){
+            var leavingSection = this;
+            if(origin.index == 0 && direction == 'down'){
+                $(".navbar").removeClass("none");
+            } else {
+                $(".navbar").addClass("none");
+            }
+        },
 	});
 });
 // Timer
