@@ -55,14 +55,16 @@ p {
 }
 .cntdwn div {
 	padding: 3rem;
-	background-color: rgba(199, 4, 0);
-    opacity: 0.53;
+	background-color: rgba(199, 4, 0, 0.53);
 	color: #fff;
 	font-size: 4.5rem;
 	font-family: 'Loves';
 	letter-spacing: 1.5rem;
-    animation: pulse 1s cubic-bezier(0.5,0,0.5,1) infinite;
-    -webkit-animation: pulse 1s cubic-bezier(0.5,0,0.5,1) infinite;
+    transition: .5s ease-out;
+    /*
+    animation: pulse 1s infinite;
+    -webkit-animation: pulse 1s infinite;
+    */
 }
 .cntdwn p {
 	text-align: right;
@@ -326,8 +328,8 @@ th{
     padding: 15%;
     margin: auto;
     border-radius: 60%;
-    border: 20px solid #67aeff;
-    border-color: #36d2d6 transparent transparent transparent;
+    border: 20px solid;
+    border-color: #67aeff transparent transparent transparent;
     animation: lds-ring 1.5s cubic-bezier(0.5,0,0.5,1) infinite;
 }
 .lds-ring > div:nth-child(2) {
@@ -392,5 +394,7 @@ th{
 @-webkit-keyframes typing{from{width: 0}to{width: 100%}}
 @keyframes opacity{from{opacity: 0}to{opacity: 1}}
 @-webkit-keyframes opacity{from{opacity: 0}to{opacity: 1}}
-@keyframes pulse{0%{opacity:.53;}50%{opacity: .8}100%{opacity: .53}}
-@-webkit-keyframes pulse{0%{opacity:.8;}50%{opacity: .53}100%{opacity: .8}}
+/*
+@keyframes pulse{0%{background-color: rgba(199, 4, 0, 0.53)}50%{background-color: rgba(199, 4, 0, 0.8)}100%{background-color: rgba(199, 4, 0, 0.53)}}
+@-webkit-keyframes pulse{0%{background-color: rgba(199, 4, 0, 0.53)}50%{background-color: rgba(199, 4, 0, 0.8)}100%{background-color: rgba(199, 4, 0, 0.53)}}
+*/
