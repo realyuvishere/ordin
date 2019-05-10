@@ -354,6 +354,10 @@ th{
     font-family: 'Major Mono Display';
     font-size: 2rem
 }
+.ordin {
+    font-size: 5rem;
+    color: #333; 
+}
 
 @media screen and (max-width: 915px) {
 	.left, .right {
@@ -394,7 +398,4 @@ th{
 @-webkit-keyframes typing{from{width: 0}to{width: 100%}}
 @keyframes opacity{from{opacity: 0}to{opacity: 1}}
 @-webkit-keyframes opacity{from{opacity: 0}to{opacity: 1}}
-/*
-@keyframes pulse{0%{background-color: rgba(199, 4, 0, 0.53)}50%{background-color: rgba(199, 4, 0, 0.8)}100%{background-color: rgba(199, 4, 0, 0.53)}}
-@-webkit-keyframes pulse{0%{background-color: rgba(199, 4, 0, 0.53)}50%{background-color: rgba(199, 4, 0, 0.8)}100%{background-color: rgba(199, 4, 0, 0.53)}}
-*/
+@keyframes 

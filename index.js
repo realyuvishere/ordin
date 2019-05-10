@@ -11,12 +11,17 @@ $(document).ready(function() {
                 $(".mainbod").css('opacity', '1');
                 $(".intro").addClass("none");
             }, 2000);
+            $(document).ready(function(){
+                $(".thisguy").click(function(){
+                    $("table").slideToggle();
+                });
+            });
         },
         onLeave: function(origin, destination, direction){
             var leavingSection = this;
-            if(origin.index == 0 && direction == 'down'){
+            if(origin.index == 0){
                 $(".navbar").removeClass("none");
-            } else {
+            } else if(destination.index == 0) {
                 $(".navbar").addClass("none");
             }
         },
@@ -43,11 +48,3 @@ setInterval(function(){
         $("#demo").css('background-color', 'rgba(199, 4, 0, 0.53)');
     }, 500)
 }, 1000);
-
-//Event Head Contact Modal
-
-$(document).ready(function(){
-    $(".thisguy").click(function(){
-        $("table").slideToggle();
-    });
-});
