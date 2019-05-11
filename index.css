@@ -66,10 +66,6 @@ p {
 	font-family: 'Loves';
 	letter-spacing: 1.5rem;
     transition: .5s ease-out;
-    /*
-    animation: pulse 1s infinite;
-    -webkit-animation: pulse 1s infinite;
-    */
 }
 .cntdwn p {
 	text-align: right;
