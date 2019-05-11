@@ -358,8 +358,8 @@ th{
     font-size: 5rem;
     color: #fff; 
     position: absolute;
-    flex: auto;
-    float: right
+    font-family: 'Loves';
+    padding-top: 30%
 }
 
 @media screen and (max-width: 915px) {
