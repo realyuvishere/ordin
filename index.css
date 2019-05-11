@@ -356,7 +356,10 @@ th{
 }
 .ordin {
     font-size: 5rem;
-    color: #333; 
+    color: #fff; 
+    position: absolute;
+    flex: auto;
+    float: right
 }
 
 @media screen and (max-width: 915px) {
