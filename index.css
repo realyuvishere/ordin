@@ -40,9 +40,11 @@ p {
 .abt {
 	padding: 4rem 0;
     transition: .3s ease-out;
+    background-color: rgba(0,0,0,0.3)
 }
 .abt:hover {
-    background-color: rgba(0,0,0,0.1)
+    background-color: #fff;
+    color: #333
 }
 .abt p {
 	padding: 2rem 5rem;
