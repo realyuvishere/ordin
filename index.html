@@ -1,379 +1,506 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Ordin@trix 19.0</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Major+Mono+Display" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-		<link rel="icon" href="">
-		<link rel="stylesheet" href="https://YuvrajSharma07.github.io/Web_Development_Folder/templates/Libraries/ripple_effect_v0.3/ripple_effect_v0.3/ripple_effect.min.css">
-		<link rel="stylesheet" href="index.css">
-        <link rel="stylesheet" href="ordin.css">
-	</head>
-	<body>
-        <div class="intro" id="intro">
-            <div class="lds-css">
-                <div class="lds-ring" style="width:100%;height:100%"><div></div><div></div><div></div><div></div><div class="weltext">Welcome</div></div>
+
+<head>
+    <title>Ordin@trix 19.0</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="https://YuvrajSharma07.github.io/Web_Development_Folder/templates/Libraries/ripple_effect_v0.3/ripple_effect_v0.3/ripple_effect.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="ordin.css">
+    <link rel="icon" href="favicon.png" sizes="26x26" type="image/png">
+</head>
+
+<body>
+    <div class="intro" id="intro">
+        <div class="lds-css">
+            <div class="lds-ring" style="width:100%;height:100%">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div class="weltext">Welcome</div>
             </div>
         </div>
-		<div class="mainbod" id="mainbod">
-            <iframe src="lib/silence.mp3" allow="autoplay" class="none"></iframe>
-            <audio class="none" autoplay loop controls><source src="lib/index.mp3" type="audio/mp3"></audio>
-            <nav class="navbar fixed-top navbar-expand-md navbar-dark none" id="navbar" style="background-color: rgba(0,0,0,0.3);">
-                <img class="img-fluid logoimg" src="lib/logo.png" placeholder="Ordin@trix 19.0">
-                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navb" aria-controls="navb" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navb">
-                    <ul class="nav navbar-nav ml-auto mt-2 mt-lg-0">
-                        <li class="">
-                            <a data-menuanchor="home" class="nav-item nav-link" href="#home">Home</a>
-                        </li>
-                        <li class="">
-                            <a data-menuanchor="reg" class="nav-item nav-link" href="#reg">Register</a>
-                        </li>
-                        <li class="">
-                            <a data-menuanchor="eve" class="nav-item nav-link" href="#eve">Events</a>
-                        </li>
-                        <li class="">
-                            <a data-menuanchor="con" class="nav-item nav-link" href="#con">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <div class="allmodals">
-                <div class="modal fade bd-example-modal-lg" id="mod1" tabindex="-1" role="dialog" aria-labelledby="innov" aria-hidden="true">
-							<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-								<div class="modal-content">
-									<div class="modal-header">
-										<h2 class="modal-title text-center" id="script">Innovate@trix</h2>
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-											<span aria-hidden="true">&times;</span>
-										</button>
-									</div>
-									<div class="modal-body">
-										<ol>
-                                            <li>This event is open for students of classes <b>VI-XII</b>.</li>
-											<li>Only <b>1</b> participant is allowed to participate from each school.</li>
-											<li>Participants should be prepared to unlearn,learn, create & collaborate on the spot.</li>
-											<li>Participants will learn how to implement basic technologies like Electronics - Arduino, Sensors, Programming, CAD Design & 3D Printing to solve daily problems and build up a product. </li>
-                                            <li>Participants will be provided with  components required and have to develop an  IDEA/ Product within 3 hours.</li>
-										    <li>Each student to carry his/her laptop  for the event. Knowledge of arduino board & programming will be helpful.</li>
-                                        </ol>
-									</div>
-									<div class="modal-footer">
-										<p style="width:100%;    ">Know whom to contact in case of querie s,<b></b> that would be <a style="color:blue;" class="thisguy">this guy</a></p>
-										<div class="eventhead" id="eventhead" style="width:100%"><table style="display: none;">
-										    <tbody>
-										        <tr><th>Aman Aggarwal</th><th>amannagarwal13@gmail.com</th><th>9811265618 </th></tr>
-										        <tr><th>Devanh Chowdhary</th><th>devanshchoudhary10@gmail.com</th><th>8588007098</th></tr>
-										    </tbody>
-										</table></div>
-									</div>
-								</div>
-							</div>
-						</div>
-                <div class="modal fade bd-example-modal-lg" id="mod2" tabindex="-1" role="dialog" aria-labelledby="confer" aria-hidden="true">
-							<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-								<div class="modal-content">
-									<div class="modal-header">
-										<h2 class="modal-title text-center" id="script">Confer@trix</h2>
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-											<span aria-hidden="true">&times;</span>
-										</button>
-									</div>
-									<div class="modal-body">
-										<ol>
-                                            <li>This debating event is open for students of classes <b>IX-XII</b>. There are 3 rounds in this event.</li>
-											<li>Only <b>1</b> participant is allowed to participate from each school.</li>
-											<li>The Prelims and the Semi Finals will be a knockout style 1 v 1 debate. The Finals would be a group discussion.</li>
-											<li>The choice of topic, sides and opponents would be done using a randomized chit system.</li>
-                                            <li>Topics will be given on-the-spot.</li>
-										</ol>
-									</div>
-									<div class="modal-footer">
-										<p style="width:100%;    ">Know whom to contact in case of querie s,<b></b> that would be <a style="color:blue;" class="thisguy">this guy</a></p>
-										<div class="eventhead" id="eventhead"><table style="display: none;">
-										    <tbody>
-										        <tr><th>Sanjeet Aggarwal</th><th>sanjeetaggarwal@gmail.com</th><th>9999161279</th></tr>
-										        <tr><th>Snigdha Soti</th><th>ssoti25@gmail.com</th><th>9971071851</th></tr>
-										        <tr><th>Nikita Pant</th><th>Nikitapant11@gmail.com</th><th>8826887086</th></tr>
-										    </tbody>
-										</table></div>
-									</div>
-								</div>
-							</div>
-						</div>
-                <div class="modal fade bd-example-modal-lg" id="mod3" tabindex="-1" role="dialog" aria-labelledby="bot" aria-hidden="true">
-							<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-								<div class="modal-content">
-									<div class="modal-header">
-										<h2 class="modal-title text-center" id="script">Movie@trix</h2>
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-											<span aria-hidden="true">&times;</span>
-										</button>
-									</div>
-									<div class="modal-body">
-										<ol>
-                                            <li>This event is open for students of classes <b>VIII-XII</b>.</li>
-                                            <li>A team of <b>2</b> can participate from each school, with <b>1</b> team per school only.</li>
-
-                                            <li>The participating teams must upload their entries on YouTube (Unlisted/Private)latest by 2nd August’19</li>
-                                            <li>The movie length should not be more than 4 minutes(including credits). The participants are not allowed to use any copyrighted content in their work.</li>
-                                            <li>Top 20 entries will be invited for the final showcase in front of the jury.</li>
-                                            <li>There will be two runs in which the least time taken by the robot will be considered.</li>
-											<li>Topics - 
-                                                <ul>
-                                                    <li> The Mistake of Race</li>
-                                                    <li> A Pauper, An Indigent</li>
-                                                    <li> Artificial Reality and Real Life</li>
-                                                </ul>
-											</li>
-										</ol>
-									</div>
-									<div class="modal-footer">
-										<p>Know whom to contact in case of queries, that would be <a style="color:blue;" class="thisguy">this guy</a></p>
-									<div class="eventhead" id="eventhead"><table style="display: none;">
-										    <tbody>
-										        
-										        <tr><th>Kshitij Pandey</th><th>kshitij10940@gmail.com</th><th>7303966730</th></tr>
-										        <tr><th>Dhruv Bhari</th><th>crdhruv983@gmail.com</th><th>7011420304</th></tr>
-										    </tbody>
-										</table></div>
-									</div>
-								</div>
-							</div>
-						</div>
-                <div class="modal fade bd-example-modal-lg" id="mod4" tabindex="-1" role="dialog" aria-labelledby="quiz" aria-hidden="true">
-							<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-								<div class="modal-content">
-									<div class="modal-header">
-										<h2 class="modal-title text-center" id="crypt">Quiz@trix</h2>
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-											<span aria-hidden="true">&times;</span>
-										</button>
-									</div>
-									<div class="modal-body">
-										<ol>
-                                            <li>This event is open for students of classes <b>IX-XII</b>.</li>
-                                            <li>A team of <b>2</b> can participate from each school, with 1 team per school only.</li>
-                                            <li>This event will be conducted in two phases: an <b>online Prelims</b> followed by an <b>on-site Finals</b>.</li>
-                                            <li>Only the top <b>6</b> teams will qualify for the Finals.</li>
-											<li>Questions can be asked from any aspect of the world of Technology and related industries.</li>
-										</ol>
-									</div>
-									<div class="modal-footer">
-										<p>Know whom to contact in case of queries, that would be <a style="color:blue;" class="thisguy">this guy</a></p>
-										<div class="eventhead" id="eventhead"><table style="display: none;">
-										    <tbody>
-										        <tr><th>Asees Singh</th><th>Aseessingh4@gmail.com</th><th>7217824828</th></tr>
-											    <tr><th>Namya Chhabra</th><th>Namyachhabra@gmail.com</th><th>9643566902</th></tr>
-										    </tbody>
-										</table></div>
-									</div>
-								</div>
-							</div>
-						</div>
-                <div class="modal fade bd-example-modal-lg" id="mod6" tabindex="-1" role="dialog" aria-labelledby="anim" aria-hidden="true">
-							<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-								<div class="modal-content">
-									<div class="modal-header">
-										<h2 class="modal-title text-center" id="script">Anim@trix</h2>
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-											<span aria-hidden="true">&times;</span>
-										</button>
-									</div>
-									<div class="modal-body">
-										<ol>
-                                            <li>This event is open for students of classes <b>III-V</b>.</li>
-											<li>A team of <b>2</b> can participate from each school, with <b>1</b> team per school only.</li>
-                                            <li>The participants are supposed to create a <b>short movie</b> using <b>SCRATCH</b> on the given topic within the given time.</li>
-										</ol>
-									</div>
-									<div class="modal-footer">
-										<p>Know whom to contact in case of queries, that would be <a style="color:blue;" class="thisguy">this guy</a></p>
-										<div class="eventhead" id="eventhead"><table style="display: none;">
-										    <tbody>
-										        <tr><th>Drashik Chhabra</th><th>Drashikc@gmail.com</th><th>7888312280</th></tr>
-										    </tbody>
-										</table></div>
-									</div>
-								</div>
-							</div>
-						</div>
-                <div class="modal fade bd-example-modal-lg" id="mod7" tabindex="-1" role="dialog" aria-labelledby="ingen" aria-hidden="true">
-							<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-								<div class="modal-content">
-									<div class="modal-header">
-										<h2 class="modal-title text-center" id="script">INGENUIN</h2>
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-											<span aria-hidden="true">&times;</span>
-										</button>
-									</div>
-									<div class="modal-body">
-										<ol>
-                                            <li>This event is open for students of classes <b>VI to XII</b>.</li>
-											<li>A team of <b>2</b> can participate from each school, with <b>1</b> team per school only.</li>
-											<li>Only first 22 registrations will be entertained for this event.</li>
-                                            <li>Students must come with an idea /solution to one of the existing/future problems of mankind and/or  the world we live in.</li>
-                                            <li>They will then present it using the creative suite of ‘ADOBE SPARK’</li>
-                                            <li>The teams will be oriented on the softwares, though pre hand knowledge will be helpful.</li>
-                                            <li>Each team will get 2 systems to work upon.
-There are attractive prizes to be won  in following categories:
-
-                                                <UL><li>Best Page</li>
-                                                    <li>Best Animation/video</li>
-                                                <li>Best Graphics</li></UL>
-</li>
-										</ol>
-										</ol>
-									</div>
-									<div class="modal-footer">
-										<p>Know whom to contact in case of queries, that would be <a style="color:blue;" class="thisguy">this guy</a></p>
-										<div class="eventhead" id="eventhead"><table style="display: none;">
-										    <tbody>
-										        <tr><th>YUvraj Sharma</th><th>billiondollarone07@gmail.com</th><th>9319482704</th></tr>
-											    <tr><th>Vaibhav Bhardvaj</th><th>veb20402@gmail.com</th><th>9717873112</th></tr>
-											    <tr><th>Kshitij Pandey</th><th>kshitij10940@gmail.com</th><th>7303966730</th></tr>
-										    </tbody>
-										</table></div>
-									</div>
-								</div>
-							</div>
-						</div>
-                <div class="modal fade bd-example-modal-lg" id="mod8" tabindex="-1" role="dialog" aria-labelledby="snap" aria-hidden="true">
-							<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-								<div class="modal-content">
-									<div class="modal-header">
-										<h2 class="modal-title text-center" id="snap">Snap@trix</h2>
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-											<span aria-hidden="true">&times;</span>
-										</button>
-									</div>
-									<div class="modal-body">
-										<ol>
-                                            <li>This event is open for students of classes <b>VI-XII</b>.</li>
-											<li>A team of <b>2</b> can participate from each school, with <b>1</b> team per school only.</li>
-											<li>The topic will be declared on the spot .</li>
-                                            <li>Participants are required to do as directed in the given time frame.</li>
-                                            <li>Photos should be clicked within the given area,anyone trespassing will be disqualified.</li>
-                                            <li>Props will be provided on-site.</li>
-                                            <li>The pictures must be submitted in a pen drive with minimal 
-          editing  allowed on LIGHTROOM & PHOTOSHOP.</li>
-                                            <li>Participants should get their own cameras,tripod,transfer cable, card readers,laptops,pen drives etc. The host school will not provide any equipment.</li>
-										</ol>
-									</div>
-									<div class="modal-footer">
-										<p>Know whom to contact in case of queries, that would be <a style="color:blue;" class="thisguy">this guy</a></p>
-										<div class="eventhead" id="eventhead"><table style="display: none;">
-										    <tbody>
-										        <tr><th>Aaryan Kohli</th><th>aaryan.kohli1182@gmail.com</th><th>9999768449</th></tr>
-											    <tr><th>Bhaskar Manchanda</th><th>manchandabhaskar02@gmail.com</th><th>9711609096 </th></tr>
-											    
-										    </tbody>
-										</table></div>
-									</div>
-								</div>
-							</div>
-						</div>
-                <div class="modal fade bd-example-modal-lg" id="pic1" tabindex="-1" role="dialog" aria-labelledby="pic1" aria-hidden="true">
-                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                        <center><img src="lib/yuvraj.JPG" class="fullimg"></center>
-                    </div>
-                </div>
-                <div class="modal fade bd-example-modal-lg" id="pic2" tabindex="-1" role="dialog" aria-labelledby="pic2" aria-hidden="true">
-                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                        <center><img src="lib/aman.jpg" class="fullimg"></center>
-                    </div>
-                </div>
-                <div class="modal fade bd-example-modal-lg" id="pic3" tabindex="-1" role="dialog" aria-labelledby="pic3" aria-hidden="true">
-                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                        <center><img src="lib/devansh.JPG" class="fullimg"></center>
-                    </div>
-                </div>
-                <div class="modal fade bd-example-modal-lg" id="pic4" tabindex="-1" role="dialog" aria-labelledby="pic4" aria-hidden="true">
-                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                        <center><img src="lib/drashik.JPG" class="fullimg"></center>
-                    </div>
-                </div>
-                <div class="modal fade bd-example-modal-lg" id="pic5" tabindex="-1" role="dialog" aria-labelledby="pic5" aria-hidden="true">
-                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                        <center><img src="lib/vaibhav.JPG" class="fullimg"></center>
-                    </div>
-                </div>
-                <div class="modal fade bd-example-modal-lg" id="pic6" tabindex="-1" role="dialog" aria-labelledby="pic6" aria-hidden="true">
-                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                        <center><img src="lib/kshitij.JPG" class="fullimg"></center>
-                    </div>
-                </div>
-                <div class="modal fade bd-example-modal-lg" id="pic7" tabindex="-1" role="dialog" aria-labelledby="pic7" aria-hidden="true">
-                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                        <center><img src="lib/dhruv.jpeg" class="fullimg"></center>
-                    </div>
-                </div>
-                <div class="modal fade bd-example-modal-lg" id="pic8" tabindex="-1" role="dialog" aria-labelledby="pic8" aria-hidden="true">
-                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                        <center><img src="lib/asees.JPG" class="fullimg"></center>
-                    </div>
-                </div>
-                <div class="modal fade bd-example-modal-lg" id="pic9" tabindex="-1" role="dialog" aria-labelledby="pic9" aria-hidden="true">
-                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                        <center><img src="lib/aaryan.jpeg" class="fullimg"></center>
-                    </div>
-                </div>
-                <div class="modal fade bd-example-modal-lg" id="pic10" tabindex="-1" role="dialog" aria-labelledby="pic10" aria-hidden="true">
-                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                        <center><img src="lib/sanjeet.jpg" class="fullimg"></center>
-                    </div>
-                </div>
-                <div class="modal fade bd-example-modal-lg" id="pic11" tabindex="-1" role="dialog" aria-labelledby="pic11" aria-hidden="true">
-                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                        <center><img src="lib/nikita.jpeg" class="fullimg"></center>
-                    </div>
-                </div>
-                <div class="modal fade bd-example-modal-lg" id="pic12" tabindex="-1" role="dialog" aria-labelledby="pic12" aria-hidden="true">
-                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                        <center><img src="lib/snigdha.jpeg" class="fullimg"></center>
-                    </div>
-                </div>
-                <div class="modal fade bd-example-modal-lg" id="pic15" tabindex="-1" role="dialog" aria-labelledby="pic15" aria-hidden="true">
-                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                        <center><img src="lib/namya.jpg" class="fullimg"></center>
-                    </div>
-                </div>
-                <div class="modal fade bd-example-modal-lg" id="pic16" tabindex="-1" role="dialog" aria-labelledby="pic16" aria-hidden="true">
-                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                        <center><img src="lib/shaivi.jpeg" class="fullimg"></center>
+    </div>
+    <div class="mainbod" id="mainbod">
+        <iframe src="lib/silence.mp3" allow="autoplay" class="none"></iframe>
+        <audio class="none" autoplay loop controls>
+            <source src="lib/index.mp3" type="audio/mp3"></audio>
+        <nav class="navbar fixed-top navbar-expand-md navbar-dark none" id="navbar" style="background-color: rgba(0,0,0,0.3);">
+            <img class="img-fluid logoimg" src="lib/logo.png" placeholder="Ordin@trix 19.0">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navb" aria-controls="navb" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navb">
+                <ul class="nav navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="">
+                        <a data-menuanchor="home" class="nav-item nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="">
+                        <a data-menuanchor="reg" class="nav-item nav-link" href="#reg">Register</a>
+                    </li>
+                    <li class="">
+                        <a data-menuanchor="eve" class="nav-item nav-link" href="#eve">Events</a>
+                    </li>
+                    <li class="">
+                        <a data-menuanchor="con" class="nav-item nav-link" href="#con">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="allmodals">
+            <div class="modal fade bd-example-modal-lg" id="mod1" tabindex="-1" role="dialog" aria-labelledby="innov" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title text-center" id="script">Innovate@trix</h2>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <ol>
+                                <li>This event is open for students of classes <b>VI-XII</b>.</li>
+                                <li>Only <b>1</b> participant is allowed to participate from each school.</li>
+                                <li>Participants should be prepared to unlearn,learn, create & collaborate on the spot.</li>
+                                <li>Participants will learn how to implement basic technologies like Electronics - Arduino, Sensors, Programming, CAD Design & 3D Printing to solve daily problems and build up a product. </li>
+                                <li>Participants will be provided with components required and have to develop an IDEA/ Product within 3 hours.</li>
+                                <li>Each student to carry his/her laptop for the event. Knowledge of arduino board & programming will be helpful.</li>
+                            </ol>
+                        </div>
+                        <div class="modal-footer">
+                            <ul class="contactguy">
+                                <li>
+                                    <p style="width:100%;    ">Know whom to contact in case of querie s,<b></b> that would be <a style="color:blue;" class="thisguy">this guy</a></p>
+                                </li>
+                                <li>
+                                    <div class="eventhead" id="eventhead" style="width:100%">
+                                        <table style="display: none;">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Aman Aggarwal</th>
+                                                    <th>amannagarwal13@gmail.com</th>
+                                                    <th>9811265618 </th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Devanh Chowdhary</th>
+                                                    <th>devanshchoudhary10@gmail.com</th>
+                                                    <th>8588007098</th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div id="fullpage">
-                <div class="section" id="particles-js" data-anchor="ordin">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-3 col-md-12"></div>
-                            <div class="col-lg-7 col-md-12">
-                                <div class="ordin">Ordin@trix 19.0</div>
+            <div class="modal fade bd-example-modal-lg" id="mod2" tabindex="-1" role="dialog" aria-labelledby="confer" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title text-center" id="script">Confer@trix</h2>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <ol>
+                                <li>This debating event is open for students of classes <b>IX-XII</b>. There are 3 rounds in this event.</li>
+                                <li>Only <b>1</b> participant is allowed to participate from each school.</li>
+                                <li>The Prelims and the Semi Finals will be a knockout style 1 v 1 debate. The Finals would be a group discussion.</li>
+                                <li>The choice of topic, sides and opponents would be done using a randomized chit system.</li>
+                                <li>Topics will be given on-the-spot.</li>
+                            </ol>
+                        </div>
+                        <div class="modal-footer">
+                            <ul class="contactguy">
+
+                                <li>
+                                    <p style="width:100%;    ">Know whom to contact in case of querie s,<b></b> that would be <a style="color:blue;" class="thisguy">this guy</a></p>
+                                </li>
+                                <li>
+                                    <div class="eventhead" id="eventhead">
+                                        <table style="display: none;">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Sanjeet Aggarwal</th>
+                                                    <th>sanjeetaggarwal@gmail.com</th>
+                                                    <th>9999161279</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Snigdha Soti</th>
+                                                    <th>ssoti25@gmail.com</th>
+                                                    <th>9971071851</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Nikita Pant</th>
+                                                    <th>Nikitapant11@gmail.com</th>
+                                                    <th>8826887086</th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade bd-example-modal-lg" id="mod3" tabindex="-1" role="dialog" aria-labelledby="bot" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title text-center" id="script">Movie@trix</h2>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <i>It's time to portray the feeling of heart on a celluloid</i>
+                            <ol>
+                                <li>This event is open for students of classes <b>VIII-XII</b>.</li>
+                                <li>A team of <b>2</b> can participate from each school, with <b>1</b> team per school only.</li>
+
+
+                                <li>The movie length should not be more than 4 minutes(including credits). The participants are not allowed to use any copyrighted content in their work.</li>
+                                <li>The participating teams must upload their entries on YouTube (Unlisted/Private)latest by 27th July’19</li>
+                                <li>Top 20 entries will be invited for the final showcase in front of the jury.</li>
+                                <li>There will be two runs in which the least time taken by the robot will be considered.</li>
+                                <li>Topics -
+                                    <ul>
+                                        <li> The Mistake of Race</li>
+                                        <li> A Pauper, An Indigent</li>
+                                        <li> Artificial Reality and Real Life</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="modal-footer">
+                            <ul class="contactguy">
+                                <li>
+                                    <p>Know whom to contact in case of queries, that would be <a style="color:blue;" class="thisguy">this guy</a></p>
+                                </li>
+                                <li>
+                                    <div class="eventhead" id="eventhead">
+                                        <table style="display: none;">
+                                            <tbody>
+
+                                                <tr>
+                                                    <th>Kshitij Pandey</th>
+                                                    <th>kshitij10940@gmail.com</th>
+                                                    <th>7303966730</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Dhruv Bhari</th>
+                                                    <th>crdhruv983@gmail.com</th>
+                                                    <th>7011420304</th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade bd-example-modal-lg" id="mod4" tabindex="-1" role="dialog" aria-labelledby="quiz" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title text-center" id="crypt">Quiz@trix</h2>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <ol>
+                                <li>This event is open for students of classes <b>IX-XII</b>.</li>
+                                <li>A team of <b>2</b> can participate from each school, with 1 team per school only.</li>
+                                <li>This event will be conducted in two phases: an <b>online Prelims</b> followed by an <b>on-site Finals</b>.</li>
+                                <li>Only the top <b>6</b> teams will qualify for the Finals.</li>
+                                <li>Questions can be asked from any aspect of the world of Technology and related industries.</li>
+                                <li>Please check our website and facebook page for the latest updates and the details of prelims</li>
+                            </ol>
+                        </div>
+                        <div class="modal-footer">
+                            <ul class="contactguy">
+                                <li>
+                                    <p>Know whom to contact in case of queries, that would be <a style="color:blue;" class="thisguy">this guy</a></p>
+                                </li>
+                                <li>
+                                    <div class="eventhead" id="eventhead">
+                                        <table style="display: none;">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Asees Singh</th>
+                                                    <th>Aseessingh4@gmail.com</th>
+                                                    <th>7217824828</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>V. Chaitanya</th>
+                                                    <th></th>
+                                                    <th>9818216079</th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade bd-example-modal-lg" id="mod6" tabindex="-1" role="dialog" aria-labelledby="anim" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title text-center" id="script">Anim@trix</h2>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <ol>
+                                <li>This event is open for students of classes <b>III-V</b>.</li>
+                                <li>Only the first 20 teams registered will be selected for the event</li>
+                                <li>A team of <b>2</b> can participate from each school, with <b>1</b> team per school only.</li>
+                                <li>The participants are supposed to create a <b>short movie</b> using <b>SCRATCH</b> on the given topic within the given time.</li>
+                            </ol>
+                        </div>
+                        <div class="modal-footer">
+                            <ul class="contactguy">
+                                <li>
+                                    <p>Know whom to contact in case of queries, that would be <a style="color:blue;" class="thisguy">this guy</a></p>
+                                </li>
+                                <li>
+                                    <div class="eventhead" id="eventhead">
+                                        <table style="display: none;">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Drashik Chhabra</th>
+                                                    <th>Drashikc@gmail.com</th>
+                                                    <th>7888312280</th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade bd-example-modal-lg" id="mod7" tabindex="-1" role="dialog" aria-labelledby="ingen" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title text-center" id="script">INGENUIN</h2>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <i>Vulnerability is the birthplace of innovation creation and change</i>
+                            <ol>
+                                <li>This event is open for students of classes <b>VI to XII</b>.</li>
+                                <li>A team of <b>2</b> can participate from each school, with <b>1</b> team per school only.</li>
+                                <li>Only first 20 registrations will be entertained for this event.</li>
+                                <li>Students must come with an idea /solution to one of the existing/future problems of mankind and/or the world we live in.</li>
+                                <li>They will then present it using the creative suite of ‘ADOBE SPARK’</li>
+                                <li>The teams will be oriented on the softwares, though pre hand knowledge will be helpful.</li>
+                                <li>Each team will get 2 systems to work upon.
+                                </li>
+                            </ol>
+
+                        </div>
+                        <div class="modal-footer">
+                            <p>Know whom to contact in case of queries, that would be <a style="color:blue;" class="thisguy">this guy</a></p>
+                            <div class="eventhead" id="eventhead">
+                                <table style="display: none;">
+                                    <tbody>
+                                        <tr>
+                                            <th>YUvraj Sharma</th>
+                                            <th>billiondollarone07@gmail.com</th>
+                                            <th>9319482704</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Vaibhav Bhardvaj</th>
+                                            <th>veb20402@gmail.com</th>
+                                            <th>9717873112</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Kshitij Pandey</th>
+                                            <th>kshitij10940@gmail.com</th>
+                                            <th>7303966730</th>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="section" data-anchor="home">
-                    <div class="container">
-                        <div class="cntdwn">
-                            <h2>Coming Soon</h2>
-                            <div id="demo"></div>
-                            <p>6<sup>th</sup> August 2019</p>
+            </div>
+            <div class="modal fade bd-example-modal-lg" id="mod8" tabindex="-1" role="dialog" aria-labelledby="snap" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title text-center" id="snap">Snap@trix</h2>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
                         </div>
-                        <div class="row">
+                        <div class="modal-body">
+                            <i>Capture time in space!</i>
+                            <ol>
+                                <li>This event is open for students of classes <b>VI-XII</b>.</li>
+                                <li>A team of <b>2</b> can participate from each school, with <b>1</b> team per school only.</li>
+                                <li>The topic will be declared on the spot .</li>
+                                <li>Participants are required to do as directed in the given time frame.</li>
+                                <li>Photos should be clicked within the given area,anyone trespassing will be disqualified.</li>
+                                <li>Props will be provided on-site.</li>
+                                <li>The pictures must be submitted in a pen drive with minimal
+                                    editing allowed on LIGHTROOM & PHOTOSHOP.</li>
+                                <li>Participants should get their own cameras,tripod,transfer cable, card readers,laptops,pen drives etc. The host school will not provide any equipment.</li>
+                            </ol>
+                        </div>
+                        <div class="modal-footer">
+                            <ul class="contactguy">
+                                <li>
+                                    <p>Know whom to contact in case of queries, that would be <a style="color:blue;" class="thisguy">this guy</a></p>
+                                </li>
+                                <li>
+                                    <div class="eventhead" id="eventhead">
+                                        <table style="display: none;">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Aaryan Kohli</th>
+                                                    <th>aaryan.kohli1182@gmail.com</th>
+                                                    <th>9999768449</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Bhaskar Manchanda</th>
+                                                    <th>manchandabhaskar02@gmail.com</th>
+                                                    <th>9711609096 </th>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade bd-example-modal-lg" id="pic1" tabindex="-1" role="dialog" aria-labelledby="pic1" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <center><img src="lib/yuvraj.JPG" class="fullimg"></center>
+                </div>
+            </div>
+            <div class="modal fade bd-example-modal-lg" id="pic2" tabindex="-1" role="dialog" aria-labelledby="pic2" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <center><img src="lib/aman.jpg" class="fullimg"></center>
+                </div>
+            </div>
+            <div class="modal fade bd-example-modal-lg" id="pic3" tabindex="-1" role="dialog" aria-labelledby="pic3" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <center><img src="lib/devansh.JPG" class="fullimg"></center>
+                </div>
+            </div>
+            <div class="modal fade bd-example-modal-lg" id="pic4" tabindex="-1" role="dialog" aria-labelledby="pic4" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <center><img src="lib/drashik.JPG" class="fullimg"></center>
+                </div>
+            </div>
+            <div class="modal fade bd-example-modal-lg" id="pic5" tabindex="-1" role="dialog" aria-labelledby="pic5" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <center><img src="lib/vaibhav.JPG" class="fullimg"></center>
+                </div>
+            </div>
+            <div class="modal fade bd-example-modal-lg" id="pic6" tabindex="-1" role="dialog" aria-labelledby="pic6" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <center><img src="lib/kshitij.JPG" class="fullimg"></center>
+                </div>
+            </div>
+            <div class="modal fade bd-example-modal-lg" id="pic7" tabindex="-1" role="dialog" aria-labelledby="pic7" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <center><img src="lib/dhruv.jpeg" class="fullimg"></center>
+                </div>
+            </div>
+            <div class="modal fade bd-example-modal-lg" id="pic8" tabindex="-1" role="dialog" aria-labelledby="pic8" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <center><img src="lib/asees.JPG" class="fullimg"></center>
+                </div>
+            </div>
+            <div class="modal fade bd-example-modal-lg" id="pic9" tabindex="-1" role="dialog" aria-labelledby="pic9" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <center><img src="lib/aaryan.jpeg" class="fullimg"></center>
+                </div>
+            </div>
+            <div class="modal fade bd-example-modal-lg" id="pic10" tabindex="-1" role="dialog" aria-labelledby="pic10" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <center><img src="lib/sanjeet.jpg" class="fullimg"></center>
+                </div>
+            </div>
+            <div class="modal fade bd-example-modal-lg" id="pic11" tabindex="-1" role="dialog" aria-labelledby="pic11" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <center><img src="lib/nikita.jpeg" class="fullimg"></center>
+                </div>
+            </div>
+            <div class="modal fade bd-example-modal-lg" id="pic12" tabindex="-1" role="dialog" aria-labelledby="pic12" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <center><img src="lib/snigdha.jpeg" class="fullimg"></center>
+                </div>
+            </div>
+            <div class="modal fade bd-example-modal-lg" id="pic14" tabindex="-1" role="dialog" aria-labelledby="pic14" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <center><img src="lib/bhaskar.jpg" class="fullimg"></center>
+                </div>
+            </div>
+            <div class="modal fade bd-example-modal-lg" id="pic15" tabindex="-1" role="dialog" aria-labelledby="pic15" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <center><img src="lib/namya.jpg" class="fullimg"></center>
+                </div>
+            </div>
+            <div class="modal fade bd-example-modal-lg" id="pic16" tabindex="-1" role="dialog" aria-labelledby="pic16" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <center><img src="lib/shaivi.jpeg" class="fullimg"></center>
+                </div>
+            </div>
+        </div>
+        <div id="fullpage">
+            <div class="section" id="particles-js" data-anchor="ordin">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-12"></div>
+                        <div class="col-lg-7 col-md-12">
+                            <div class="ordin">Ordin@trix 19.0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section" data-anchor="home">
+                <div class="container">
+                    <div class="cntdwn">
+                        <h2>Coming Soon</h2>
+                        <div id="demo"></div>
+                        <p>6<sup>th</sup> August 2019</p>
+                    </div>
+                    <div class="row">
                         <div class="col-lg-6 col-md-12 text-center">
                             <div class="abt">
                                 <h1>Ordin@trix 19.0</h1>
@@ -391,562 +518,543 @@ There are attractive prizes to be won  in following categories:
                             </div>
                         </div>
                     </div>
-                        <div class="banner"></div>
-                        <div class="banner"></div>
-				</div>
-                </div>
-                <div class="section" data-anchor="reg">
-                    <div class="container">
-						<div class="banner"></div>
-						<h1 class="text-center">Registration Desk</h1>
-						<p class="container">Register yourself here for various events.</p>
-						<div class="container">
-							<div class="row">
-								<div class="col-lg-6 col-md-12">
-									<div class="banner"></div>
-									<h2>Innovate@trix</h2>
-									<form class="container">
-										<div class="form-row">
-											<div class="form-group col-md-12">
-												<label for="part1">Name of participants</label>
-												<input type="text" class="form-control" id="part2" placeholder="Participant #1">
-											</div>
-											<div class="form-group col-md-12">
-												<input type="text" class="form-control" id="part2" placeholder="Participant #2">
-											</div>
-										</div>
-                                        <div class="form-row">
-											<div class="form-group col-md-12">
-												<input type="text" class="form-control" id="part2" placeholder="Participant #3">
-											</div>
-											<div class="form-group col-md-12">
-												<input type="text" class="form-control" id="part2" placeholder="Participant #4">
-											</div>
-										</div>
-										<div class="form-row">
-											<div class="form-group col-md-12">
-												<label for="epart1">Email ID of participants</label>
-												<input type="email" class="form-control" id="part2" placeholder="Participant #1">
-											</div>
-											<div class="form-group col-md-12">
-												<input type="email" class="form-control" id="part2" placeholder="Participant #2">
-											</div>
-										</div>
-                                        <div class="form-row">
-											<div class="form-group col-md-12">
-												<input type="email" class="form-control" id="part2" placeholder="Participant #3">
-											</div>
-											<div class="form-group col-md-12">
-												<input type="email" class="form-control" id="part2" placeholder="Participant #4">
-											</div>
-                                        </div>
-										<div class="form-group">
-											<label for="sname">School Name</label>
-											<input type="text" class="form-control" id="sname" placeholder="School Name">
-										</div>
-										<div class="form-group">
-											<label for="sname">School Email ID</label>
-											<input type="text" class="form-control" id="sname" placeholder="School Email">
-										</div>
-										<button type="submit" class="btn btn-danger">Let's Roll</button>
-									</form>
-								</div>
-								<div class="col-lg-6 col-md-12">
-									<div class="banner"></div>
-									<h2>Confer@trix</h2>
-									<form class="container">
-										<div class="form-row">
-											<div class="form-group col-md-12">
-												<label for="part1">Name of participants</label>
-												<input type="text" class="form-control" id="part2" placeholder="Participant #1">
-											</div>
-											<div class="form-group col-md-12">
-												<input type="text" class="form-control" id="part2" placeholder="Participant #2">
-											</div>
-										</div>
-										<div class="form-row">
-											<div class="form-group col-md-12">
-												<label for="epart1">Email ID of participants</label>
-												<input type="email" class="form-control" id="part2" placeholder="Participant #1">
-											</div>
-											<div class="form-group col-md-12">
-												<input type="email" class="form-control" id="part2" placeholder="Participant #2">
-											</div>
-										</div>
-										<div class="form-group">
-											<label for="sname">School Name</label>
-											<input type="text" class="form-control" id="sname" placeholder="School Name">
-										</div>
-										<div class="form-group">
-											<label for="sname">School Email ID</label>
-											<input type="text" class="form-control" id="sname" placeholder="School Email">
-										</div>
-										<button type="submit" class="btn btn-danger">India wants to know</button>
-									</form>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-lg-6 col-md-12">
-									<div class="banner"></div>
-									<h2>Bot@trix</h2>
-									<form class="container">
-										<div class="form-row">
-											<div class="form-group col-md-12">
-												<label for="part1">Name of participants</label>
-												<input type="text" class="form-control" id="part2" placeholder="Participant #1">
-											</div>
-											<div class="form-group col-md-12">
-												<input type="text" class="form-control" id="part2" placeholder="Participant #2">
-											</div>
-										</div>
-										<div class="form-row">
-											<div class="form-group col-md-12">
-												<label for="epart1">Email ID of participants</label>
-												<input type="email" class="form-control" id="part2" placeholder="Participant #1">
-											</div>
-											<div class="form-group col-md-12">
-												<input type="email" class="form-control" id="part2" placeholder="Participant #2">
-											</div>
-										</div>
-										<div class="form-group">
-											<label for="sname">School Name</label>
-											<input type="text" class="form-control" id="sname" placeholder="School Name">
-										</div>
-										<div class="form-group">
-											<label for="sname">School Email ID</label>
-											<input type="text" class="form-control" id="sname" placeholder="School Email">
-										</div>
-										<button type="submit" class="btn btn-danger">Cyborgs <3</button>
-									</form>
-								</div>
-								<div class="col-lg-6 col-md-12">
-									<div class="banner"></div>
-									<h2>Quiz@trix</h2>
-									<form class="container">
-										<div class="form-row">
-											<div class="form-group col-md-12">
-												<label for="part1">Name of participants</label>
-												<input type="text" class="form-control" id="part2" placeholder="Participant #1">
-											</div>
-											<div class="form-group col-md-12">
-												<input type="text" class="form-control" id="part2" placeholder="Participant #2">
-											</div>
-										</div>
-										<div class="form-row">
-											<div class="form-group col-md-12">
-												<label for="epart1">Email ID of participants</label>
-												<input type="email" class="form-control" id="part2" placeholder="Participant #1">
-											</div>
-											<div class="form-group col-md-12">
-												<input type="email" class="form-control" id="part2" placeholder="Participant #2">
-											</div>
-										</div>
-										<div class="form-group">
-											<label for="sname">School Name</label>
-											<input type="text" class="form-control" id="sname" placeholder="School Name">
-										</div>
-										<div class="form-group">
-											<label for="sname">School Email ID</label>
-											<input type="text" class="form-control" id="sname" placeholder="School Email">
-										</div>
-										<button type="submit" class="btn btn-danger">Derek O Brien</button>
-									</form>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-lg-6 col-md-12">
-									<div class="banner"></div>
-									<h2>Anim@trix</h2>
-									<form class="container">
-										<div class="form-row">
-											<div class="form-group col-md-12">
-												<label for="part1">Name of participants</label>
-												<input type="text" class="form-control" id="part2" placeholder="Participant #1">
-											</div>
-											<div class="form-group col-md-12">
-												<input type="text" class="form-control" id="part2" placeholder="Participant #2">
-											</div>
-										</div>
-										<div class="form-row">
-											<div class="form-group col-md-12">
-												<label for="epart1">Email ID of participants</label>
-												<input type="email" class="form-control" id="part2" placeholder="Participant #1">
-											</div>
-											<div class="form-group col-md-12">
-												<input type="email" class="form-control" id="part2" placeholder="Participant #2">
-											</div>
-										</div>
-										<div class="form-group">
-											<label for="sname">School Name</label>
-											<input type="text" class="form-control" id="sname" placeholder="School Name">
-										</div>
-										<div class="form-group">
-											<label for="sname">School Email ID</label>
-											<input type="text" class="form-control" id="sname" placeholder="School Email">
-										</div>
-										<button type="submit" class="btn btn-danger">Re-present</button>
-									</form>
-								</div>
-                                <div class="col-lg-6 col-md-12">
-									<div class="banner"></div>
-									<h2>INGENUIN</h2>
-									<form class="container">
-										<div class="form-row">
-											<div class="form-group col-md-12">
-												<label for="part1">Name of participants</label>
-												<input type="text" class="form-control" id="part2" placeholder="Participant #1">
-											</div>
-											<div class="form-group col-md-12">
-												<input type="text" class="form-control" id="part2" placeholder="Participant #2">
-											</div>
-										</div>
-										<div class="form-row">
-											<div class="form-group col-md-12">
-												<label for="epart1">Email ID of participants</label>
-												<input type="email" class="form-control" id="part2" placeholder="Participant #1">
-											</div>
-											<div class="form-group col-md-12">
-												<input type="email" class="form-control" id="part2" placeholder="Participant #2">
-											</div>
-										</div>
-										<div class="form-group">
-											<label for="sname">School Name</label>
-											<input type="text" class="form-control" id="sname" placeholder="School Name">
-										</div>
-										<div class="form-group">
-											<label for="sname">School Email ID</label>
-											<input type="text" class="form-control" id="sname" placeholder="School Email">
-										</div>
-										<button type="submit" class="btn btn-danger">Surprised</button>
-									</form>
-								</div>
-							</div>
-							<div class="banner"></div>
-						</div>
-					</div>
-                </div>
-                <div class="section" data-anchor="eve">
                     <div class="banner"></div>
-					<div class="container">
-						<h1 class="text-center">The Events</h1>
-						<p>Because you have to know what all is in the store.</p>
-						<h2>Some general guidelines</h2>
-						<ol>
-							<li>Registrations will be done online on first come first served basis. On the spot registrations for any event will not be done.</li>
-							<li>All schools must report at the venue by 8 AM for registration. If a school is running late, it must inform the organisers about the same.</li>
-							<li>Event schedule and rules are subject to change till the last moment. You are requested to check our website and facebook page for the same.</li>
-                            <li>All the schools must be accompanied by a <b>teacher</b>.</li>
-						</ol>
-					</div>
-					<div class="events container">
-						<h2>Events</h2>
-						<div class="banner"></div>
-						<div class="row">
-							<div class="col-lg-4 col-sm-12 text-center" data-toggle="modal" data-target="#mod1">
-                                <i class="fas fa-brain eicon"></i>
-								<h2>Innovate@trix</h2>
-								<p>Get your minds running like 'em RAMs.</p>
-							</div>
-							<div class="col-lg-4 col-sm-12 text-center" data-toggle="modal" data-target="#mod2">
-                                <i class="far fa-comments eicon"></i>
-								<h2>Confer@trix</h2>
-								<p>Debate like Arnab Goswami to get to chill</p>
-							</div>
-							<div class="col-lg-4 col-sm-12 text-center" data-toggle="modal" data-target="#mod3">
-								<i class="fas fa-film eicon"></i>
-								<h2>Movie@trix</h2>
-								<p>Stop, (don't) Drop and Roll...The camera</p>
-							</div>
-						</div>
-						<div class="banner"></div>
-						<div class="row">
-							<div class="col-lg-4 col-sm-12 text-center" data-toggle="modal" data-target="#mod4">
-                                <i class="far fa-lightbulb eicon"></i>
-								<h2>Quiz@trix</h2>
-								<p>The ultimate quiz event where you quiz the obvious</p>
-							</div>
-							<div class="col-lg-4 col-sm-12 text-center" data-toggle="modal" data-target="#mod6">
-                                <i class="fas fa-paint-brush eicon"></i>
-								<h2>Anim@trix</h2>
-								<p>Pixar's up</p>
-							</div>
-                            <div class="col-lg-4 col-sm-12 text-center" data-toggle="modal" data-target="#mod7">
-                                <i class="fas fa-question eicon"></i>
-								<h2>INGENUIN</h2>
-								<p>Well, been genuine never helped anyway, so time to surprise</p>
-							</div>
-						</div>
+                    <div class="banner"></div>
+                </div>
+            </div>
+            <div class="section" data-anchor="reg">
+                <div class="container">
+                    <div class="banner"></div>
+                    <h1 class="text-center">Registration Desk</h1>
+                    <p class="container">Register yourself here for various events.</p>
+                    <div class="container">
                         <div class="row">
-                            <div class="col-lg-4 col-sm-12 text-center"></div>
-                            <div class="col-lg-4 col-sm-12 text-center" data-toggle="modal" data-target="#mod8">
-                                <i class="fas fa-camera-retro eicon"></i>
-								<h2>Snap@trix</h2>
-								<p>You be clicking while the clock's ticking.</p>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="banner"></div>
+                                <h2>Innovate@trix</h2>
+                                <form class="container">
+                                    <div class="form-row">
+                                        <div class="form-group col-md-12">
+                                            <label for="part1">Name of participants</label>
+                                            <input type="text" class="form-control" id="part2" placeholder="Participant #1">
+                                        </div>
+                                        <div class="form-group col-md-12">
+                                            <input type="text" class="form-control" id="part2" placeholder="Participant #2">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-12">
+                                            <input type="text" class="form-control" id="part2" placeholder="Participant #3">
+                                        </div>
+                                        <div class="form-group col-md-12">
+                                            <input type="text" class="form-control" id="part2" placeholder="Participant #4">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-12">
+                                            <label for="epart1">Email ID of participants</label>
+                                            <input type="email" class="form-control" id="part2" placeholder="Participant #1">
+                                        </div>
+                                        <div class="form-group col-md-12">
+                                            <input type="email" class="form-control" id="part2" placeholder="Participant #2">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-12">
+                                            <input type="email" class="form-control" id="part2" placeholder="Participant #3">
+                                        </div>
+                                        <div class="form-group col-md-12">
+                                            <input type="email" class="form-control" id="part2" placeholder="Participant #4">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="sname">School Name</label>
+                                        <input type="text" class="form-control" id="sname" placeholder="School Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="sname">School Email ID</label>
+                                        <input type="text" class="form-control" id="sname" placeholder="School Email">
+                                    </div>
+                                    <button type="submit" class="btn btn-danger">Let's Roll</button>
+                                </form>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="banner"></div>
+                                <h2>Confer@trix</h2>
+                                <form class="container">
+                                    <div class="form-row">
+                                        <div class="form-group col-md-12">
+                                            <label for="part1">Name of participants</label>
+                                            <input type="text" class="form-control" id="part2" placeholder="Participant #1">
+                                        </div>
+                                        <div class="form-group col-md-12">
+                                            <input type="text" class="form-control" id="part2" placeholder="Participant #2">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-12">
+                                            <label for="epart1">Email ID of participants</label>
+                                            <input type="email" class="form-control" id="part2" placeholder="Participant #1">
+                                        </div>
+                                        <div class="form-group col-md-12">
+                                            <input type="email" class="form-control" id="part2" placeholder="Participant #2">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="sname">School Name</label>
+                                        <input type="text" class="form-control" id="sname" placeholder="School Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="sname">School Email ID</label>
+                                        <input type="text" class="form-control" id="sname" placeholder="School Email">
+                                    </div>
+                                    <button type="submit" class="btn btn-danger">India wants to know</button>
+                                </form>
                             </div>
                         </div>
-						<div class="banner"></div>
-					</div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12">
+                                <div class="banner"></div>
+                                <h2>Bot@trix</h2>
+                                <form class="container">
+                                    <div class="form-row">
+                                        <div class="form-group col-md-12">
+                                            <label for="part1">Name of participants</label>
+                                            <input type="text" class="form-control" id="part2" placeholder="Participant #1">
+                                        </div>
+                                        <div class="form-group col-md-12">
+                                            <input type="text" class="form-control" id="part2" placeholder="Participant #2">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-12">
+                                            <label for="epart1">Email ID of participants</label>
+                                            <input type="email" class="form-control" id="part2" placeholder="Participant #1">
+                                        </div>
+                                        <div class="form-group col-md-12">
+                                            <input type="email" class="form-control" id="part2" placeholder="Participant #2">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="sname">School Name</label>
+                                        <input type="text" class="form-control" id="sname" placeholder="School Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="sname">School Email ID</label>
+                                        <input type="text" class="form-control" id="sname" placeholder="School Email">
+                                    </div>
+                                    <button type="submit" class="btn btn-danger">Cyborgs <3</button> </form> </div> <div class="col-lg-6 col-md-12">
+                                            <div class="banner"></div>
+                                            <h2>Quiz@trix</h2>
+                                            <form class="container">
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-12">
+                                                        <label for="part1">Name of participants</label>
+                                                        <input type="text" class="form-control" id="part2" placeholder="Participant #1">
+                                                    </div>
+                                                    <div class="form-group col-md-12">
+                                                        <input type="text" class="form-control" id="part2" placeholder="Participant #2">
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-12">
+                                                        <label for="epart1">Email ID of participants</label>
+                                                        <input type="email" class="form-control" id="part2" placeholder="Participant #1">
+                                                    </div>
+                                                    <div class="form-group col-md-12">
+                                                        <input type="email" class="form-control" id="part2" placeholder="Participant #2">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="sname">School Name</label>
+                                                    <input type="text" class="form-control" id="sname" placeholder="School Name">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="sname">School Email ID</label>
+                                                    <input type="text" class="form-control" id="sname" placeholder="School Email">
+                                                </div>
+                                                <button type="submit" class="btn btn-danger">Derek O Brien</button>
+                                            </form>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12">
+                                <div class="banner"></div>
+                                <h2>Anim@trix</h2>
+                                <form class="container">
+                                    <div class="form-row">
+                                        <div class="form-group col-md-12">
+                                            <label for="part1">Name of participants</label>
+                                            <input type="text" class="form-control" id="part2" placeholder="Participant #1">
+                                        </div>
+                                        <div class="form-group col-md-12">
+                                            <input type="text" class="form-control" id="part2" placeholder="Participant #2">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-12">
+                                            <label for="epart1">Email ID of participants</label>
+                                            <input type="email" class="form-control" id="part2" placeholder="Participant #1">
+                                        </div>
+                                        <div class="form-group col-md-12">
+                                            <input type="email" class="form-control" id="part2" placeholder="Participant #2">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="sname">School Name</label>
+                                        <input type="text" class="form-control" id="sname" placeholder="School Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="sname">School Email ID</label>
+                                        <input type="text" class="form-control" id="sname" placeholder="School Email">
+                                    </div>
+                                    <button type="submit" class="btn btn-danger">Re-present</button>
+                                </form>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="banner"></div>
+                                <h2>INGENUIN</h2>
+                                <form class="container">
+                                    <div class="form-row">
+                                        <div class="form-group col-md-12">
+                                            <label for="part1">Name of participants</label>
+                                            <input type="text" class="form-control" id="part2" placeholder="Participant #1">
+                                        </div>
+                                        <div class="form-group col-md-12">
+                                            <input type="text" class="form-control" id="part2" placeholder="Participant #2">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-12">
+                                            <label for="epart1">Email ID of participants</label>
+                                            <input type="email" class="form-control" id="part2" placeholder="Participant #1">
+                                        </div>
+                                        <div class="form-group col-md-12">
+                                            <input type="email" class="form-control" id="part2" placeholder="Participant #2">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="sname">School Name</label>
+                                        <input type="text" class="form-control" id="sname" placeholder="School Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="sname">School Email ID</label>
+                                        <input type="text" class="form-control" id="sname" placeholder="School Email">
+                                    </div>
+                                    <button type="submit" class="btn btn-danger">Surprised</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="banner"></div>
+                    </div>
                 </div>
-                <div class="section" data-anchor="con">
+            </div>
+            <div class="section" data-anchor="eve">
+                <div class="banner"></div>
+                <div class="container">
+                    <h1 class="text-center">The Events</h1>
+                    <p>Because you have to know what all is in the store.</p>
+                    <h2>Some general guidelines</h2>
+                    <ol>
+                        <li>Registrations will be done online on first come first served basis. On the spot registrations for any event will not be done.</li>
+                        <li>All schools must report at the venue by 8 AM for registration. If a school is running late, it must inform the organisers about the same.</li>
+                        <li>Event schedule and rules are subject to change till the last moment. You are requested to check our website and facebook page for the same.</li>
+                        <li>All the schools must be accompanied by a <b>teacher</b>.</li>
+                    </ol>
+                </div>
+                <div class="events container">
+                    <h2>Events</h2>
                     <div class="banner"></div>
-					<div class="container">
-						<h1 class="text-center">The A - Team</h1>
-						<div class="banner"></div>
-						<div class="contact container">
-							<div class="row">
-								<div class="col-lg-4 col-md-12 text-center">
-                                    <div class="imgcontainer">
-                                        <img class="headsimg" src="lib/yuvraj.JPG">
-                                        <div class="imgoverlay" data-toggle="modal" data-target="#pic1">
-                                            <div class="imgtext">Click to see the full image</div>
-                                        </div>
-                                    </div>
-									<h1>Yuvraj Sharma</h1>
-									<h2>Head of Web Designing</h2>
-									<p>Can do stuff..</p>
-									<i class="fas fa-inbox"></i> billiondollarone07@gmail.com
-								</div>
-								<div class="col-lg-4 col-md-12 text-center">
-                                    <div class="imgcontainer">
-                                        <img class="headsimg" src="lib/aman.jpg">
-                                        <div class="imgoverlay" data-toggle="modal" data-target="#pic2">
-                                            <div class="imgtext">Click to see the full image</div>
-                                        </div>
-                                    </div>
-									<h1>Aman Agarwal</h1>
-									<h2>Head of Robotics</h2>
-									<p>Probably building a cyborg</p>
-									<i class="fas fa-inbox"></i> amannagarwal13@gmail.com
-								</div>
-								<div class="col-lg-4 col-md-12 text-center">
-                                    <div class="imgcontainer">
-                                        <img class="headsimg" src="lib/devansh.JPG">
-                                        <div class="imgoverlay" data-toggle="modal" data-target="#pic3">
-                                            <div class="imgtext">Click to see the full image</div>
-                                        </div>
-                                    </div>
-									<h1>Devansh Choudhary</h1>
-									<h2>Head of Robotics</h2>
-									<p>Follows the line</p>
-									<i class="fas fa-inbox"></i> devanshchoudhary10@gmail.com
-								</div>
-							</div>
-							<div class="banner"></div>
-							<div class="row">
-                                <div class="col-lg-4 col-md-12 text-center">
-                                    <div class="imgcontainer">
-                                        <img class="headsimg" src="lib/drashik.JPG">
-                                        <div class="imgoverlay" data-toggle="modal" data-target="#pic4">
-                                            <div class="imgtext">Click to see the full image</div>
-                                        </div>
-                                    </div>
-									<h1>Drashik Chhabra</h1>
-									<h2>Head of Creative Graphics</h2>
-									<p>One helluva virtual artist that looks like a teddy</p>
-									<i class="fas fa-inbox"></i> drashikc@gmail.com
-								</div>
-								<div class="col-lg-4 col-md-12 text-center">
-                                    <div class="imgcontainer">
-                                        <img class="headsimg" src="lib/vaibhav.JPG">
-                                        <div class="imgoverlay" data-toggle="modal" data-target="#pic5">
-                                            <div class="imgtext">Click to see the full image</div>
-                                        </div>
-                                    </div>
-									<h1>Vaibhav Bhardwaj</h1>
-									<h2>Head of Creative Graphics</h2>
-									<p>Can make you look like Thanos at a snap of fingers</p>
-									<i class="fas fa-inbox"></i> veb20402@gmail.com
-								</div>
-								<div class="col-lg-4 col-md-12 text-center">
-                                    <div class="imgcontainer">
-                                        <img class="headsimg" src="lib/kshitij.JPG">
-                                        <div class="imgoverlay" data-toggle="modal" data-target="#pic6">
-                                            <div class="imgtext">Click to see the full image</div>
-                                        </div>
-                                    </div>
-									<h1>Kshitij Pandey</h1>
-									<h2>Head of 3D Modelling</h2>
-									<p>Prints real virtual stuff</p>
-									<i class="fas fa-inbox"></i> kshitij10940@gmail.com 
-								</div>
-							</div>
-							<div class="banner"></div>
-							<div class="row">
-                                <div class="col-lg-4 col-md-12 text-center">
-                                    <div class="imgcontainer">
-                                        <img class="headsimg" src="lib/dhruv.jpeg">
-                                        <div class="imgoverlay" data-toggle="modal" data-target="#pic7">
-                                            <div class="imgtext">Click to see the full image</div>
-                                        </div>
-                                    </div>
-									<h1>Dhruv Bahri</h1>
-									<h2>Head of Movie Making</h2>
-									<p>The all-rounder perfectionist in the line</p>
-									<i class="fas fa-inbox"></i> dhruvbahri@outlook.com
-								</div>
-								<div class="col-lg-4 col-md-12 text-center">
-                                    <div class="imgcontainer">
-                                        <img class="headsimg" src="lib/asees.JPG">
-                                        <div class="imgoverlay" data-toggle="modal" data-target="#pic8">
-                                            <div class="imgtext">Click to see the full image</div>
-                                        </div>
-                                    </div>
-									<h1>Asees Singh</h1>
-									<h2>Head of Movie Making</h2>
-									<p>The tech guru</p>
-									<i class="fas fa-inbox"></i> aseessingh4@gmail.com
-								</div>
-								<div class="col-lg-4 col-md-12 text-center">
-                                    <div class="imgcontainer">
-                                        <img class="headsimg" src="lib/aaryan.jpeg">
-                                        <div class="imgoverlay" data-toggle="modal" data-target="#pic9">
-                                            <div class="imgtext">Click to see the full image</div>
-                                        </div>
-                                    </div>
-									<h1>Aaryan Kohli</h1>
-									<h2>Head of Photography</h2>
-									<p>The guy with the camera who clicks a lot of pictures for no reason</p>
-									<i class="fas fa-inbox"></i> aaryan.kohli@outlook.com
-								</div>
-							</div>
-							<div class="banner"></div>
-                            <div class="row">
-                                <div class="col-lg-4 col-md-12 text-center">
-									<div class="imgcontainer">
-                                        <img class="headsimg" src="lib/sanjeet.jpg">
-                                        <div class="imgoverlay" data-toggle="modal" data-target="#pic10">
-                                            <div class="imgtext">Click to see the full image</div>
-                                        </div>
-                                    </div>
-									<h1>Sanjeet Aggarwal</h1>
-									<h2>GD Specialist</h2>
-									<p>Can say stuff</p>
-								</div>
-                                <div class="col-lg-4 col-md-12 text-center">
-									<div class="imgcontainer">
-                                        <img class="headsimg" src="lib/nikita.jpeg">
-                                        <div class="imgoverlay" data-toggle="modal" data-target="#pic11">
-                                            <div class="imgtext">Click to see the full image</div>
-                                        </div>
-                                    </div>
-									<h1>Nikita Pant</h1>
-									<h2>GD Specialist</h2>
-									<p>Can say stuff too</p>
-								</div>
-                                <div class="col-lg-4 col-md-12 text-center">
-									<div class="imgcontainer">
-                                        <img class="headsimg" src="lib/snigdha.jpeg">
-                                        <div class="imgoverlay" data-toggle="modal" data-target="#pic12">
-                                            <div class="imgtext">Click to see the full image</div>
-                                        </div>
-                                    </div>
-									<h1>Snigdha Soti</h1>
-									<h2>GD Specialist</h2>
-									<p>Can say stuff as well, full of speakers here</p>
-								</div>
-                            </div>
-                            <div class="banner"></div>
-                            <div class="row">
-                                <div class="col-lg-4 col-md-12 text-center">
-									<div class="imgcontainer">
-                                        <img class="headsimg" src="lib/bhaskar.jpg">
-                                        <div class="imgoverlay" data-toggle="modal" data-target="#pic14">
-                                            <div class="imgtext">Click to see the full image</div>
-                                        </div>
-                                    </div>
-									<h1>Bhaskar Manchanda</h1>
-									<h2>Assistant Photographer</h2>
-									<p>Helps the guy with the camera who clicks a lot of pictures for no reason.</p>
-								</div>
-                                <div class="col-lg-4 col-md-12 text-center">
-									<div class="imgcontainer">
-                                        <img class="headsimg" src="lib/namya.jpg">
-                                        <div class="imgoverlay" data-toggle="modal" data-target="#pic15">
-                                            <div class="imgtext">Click to see the full image</div>
-                                        </div>
-                                    </div>
-									<h1>Namya Chhabra</h1>
-									<h2>Assistant Web Developer</h2>
-									<p>A kid in making</p>
-									<i class="fas fa-inbox"></i> namyachhabra@gmail.com
-								</div>
-                                <div class="col-lg-4 col-md-12 text-center">
-                                    <div class="imgcontainer">
-                                        <img class="headsimg" src="lib/shaivi.jpeg">
-                                        <div class="imgoverlay" data-toggle="modal" data-target="#pic16">
-                                            <div class="imgtext">Click to see the full image</div>
-                                        </div>
-                                    </div>
-									<h1>Shaivi Shewramani</h1>
-									<h2>Head of Creative Department</h2>
-									<p>She can do it all</p>
-									<i class="fas fa-inbox"></i> shaivis10@gmail.com
-								</div>
-                            </div>
-                            <div class="banner"></div>
-                            <div class="row">
-								<div class="col-lg-4 col-md-12 text-center">
-                                    <div class="imgcontainer">
-                                        <img class="headsimg" src="lib/saanya.JPG">
-                                        <div class="imgoverlay" data-toggle="modal" data-target="#pic8">
-                                            <div class="imgtext">Click to see the full image</div>
-                                        </div>
-                                    </div>
-									<h1>Saanya Anand</h1>
-									<h2>Head of Movie Making</h2>
-									<p>Can make vlogs</p>
-									<i class="fas fa-inbox"></i> reachsaanya@gmail.com
-								</div>
-								<div class="col-lg-4 col-md-12 text-center">
-                                    <div class="imgcontainer">
-                                        <img class="headsimg" src="lib/aaryan.jpeg">
-                                        <div class="imgoverlay" data-toggle="modal" data-target="#pic9">
-                                            <div class="imgtext">Click to see the full image</div>
-                                        </div>
-                                    </div>
-									<h1>Manya Kamath</h1>
-									<h2>Assistant Head of Photography</h2>
-									<p>Will inherit the nobal task of clicking pictures for no reason</p>
-									<i class="fas fa-inbox"></i> manyakamath@gmail.com
-								</div>
-							</div>
-                            <div class="banner"></div>
-						</div>
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-12 text-center" data-toggle="modal" data-target="#mod1">
+                            <i class="fas fa-brain eicon"></i>
+                            <h2>Innovate@trix</h2>
+                            <p>Get your minds running like 'em RAMs.</p>
+                        </div>
+                        <div class="col-lg-4 col-sm-12 text-center" data-toggle="modal" data-target="#mod2">
+                            <i class="far fa-comments eicon"></i>
+                            <h2>Confer@trix</h2>
+                            <p>Debate like Arnab Goswami to get to chill</p>
+                        </div>
+                        <div class="col-lg-4 col-sm-12 text-center" data-toggle="modal" data-target="#mod3">
+                            <i class="fas fa-film eicon"></i>
+                            <h2>Movie@trix</h2>
+                            <p>Stop, (don't) Drop and Roll...The camera</p>
+                        </div>
                     </div>
-                    <iframe style="width:100%; margin:0px; border: 0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7008.233786192498!2d77.15736990229725!3d28.566252389974288!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1da64b31037f%3A0x9fe8114b5940d45c!2sTagore+International+School!5e0!3m2!1sen!2sin!4v1513607065658" height="450" frameborder="0" allowfullscreen></iframe>
-                    <footer>
-                            <div class="left text-center">
-                                <a href="index.html" style=""><img class="img-fluid" src="lib/logo.png" placeholder="Ordin@trix 19.0"></a>
-                                <div class="fdiv">
-                                    &copy; All Rights Reserved. Pyrotech 2019<br>
-                                    Website developed by Yuvraj Sharma and the Pyrotech team<br>
-                                    Tagore International School<br>
-                                    Vasant Vihar
+                    <div class="banner"></div>
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-12 text-center" data-toggle="modal" data-target="#mod4">
+                            <i class="far fa-lightbulb eicon"></i>
+                            <h2>Quiz@trix</h2>
+                            <p>The ultimate quiz event where you quiz the obvious</p>
+                        </div>
+                        <div class="col-lg-4 col-sm-12 text-center" data-toggle="modal" data-target="#mod6">
+                            <i class="fas fa-paint-brush eicon"></i>
+                            <h2>Anim@trix</h2>
+                            <p>Pixar's up</p>
+                        </div>
+                        <div class="col-lg-4 col-sm-12 text-center" data-toggle="modal" data-target="#mod7">
+                            <i class="fas fa-question eicon"></i>
+                            <h2>INGENUIN</h2>
+                            <p>Well, been genuine never helped anyway, so time to surprise</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-12 text-center"></div>
+                        <div class="col-lg-4 col-sm-12 text-center" data-toggle="modal" data-target="#mod8">
+                            <i class="fas fa-camera-retro eicon"></i>
+                            <h2>Snap@trix</h2>
+                            <p>You be clicking while the clock's ticking.</p>
+                        </div>
+                    </div>
+                    <div class="banner"></div>
+                </div>
+            </div>
+            <div class="section" data-anchor="con">
+                <div class="banner"></div>
+                <div class="container">
+                    <h1 class="text-center">The A - Team</h1>
+                    <div class="banner"></div>
+                    <div class="contact container">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12 text-center">
+                                <div class="imgcontainer">
+                                    <img class="headsimg" src="lib/yuvraj.JPG">
+                                    <div class="imgoverlay" data-toggle="modal" data-target="#pic1">
+                                        <div class="imgtext">Click to see the full image</div>
+                                    </div>
                                 </div>
+                                <h1>Yuvraj Sharma</h1>
+                                <h2>Head of Web Designing</h2>
+                                <p>Can do stuff..</p>
+                                <i class="fas fa-inbox"></i> billiondollarone07@gmail.com
                             </div>
-                            <div class="right">
-                                <div class="right">
-                                    <ul>
-                                        <a href="login.php"><li>Your Account</li></a>
-                                        <a href="register.php"><li>Register</li></a>
-                                        <a href="sponsor.php"><li>Sponsor</li></a>
-                                    </ul>
+                            <div class="col-lg-4 col-md-12 text-center">
+                                <div class="imgcontainer">
+                                    <img class="headsimg" src="lib/aman.jpg">
+                                    <div class="imgoverlay" data-toggle="modal" data-target="#pic2">
+                                        <div class="imgtext">Click to see the full image</div>
+                                    </div>
                                 </div>
+                                <h1>Aman Agarwal</h1>
+                                <h2>Head of Robotics</h2>
+                                <p>Probably building a cyborg</p>
+                                <i class="fas fa-inbox"></i> amannagarwal13@gmail.com
                             </div>
-                        </footer>
+                            <div class="col-lg-4 col-md-12 text-center">
+                                <div class="imgcontainer">
+                                    <img class="headsimg" src="lib/devansh.JPG">
+                                    <div class="imgoverlay" data-toggle="modal" data-target="#pic3">
+                                        <div class="imgtext">Click to see the full image</div>
+                                    </div>
+                                </div>
+                                <h1>Devansh Choudhary</h1>
+                                <h2>Head of Robotics</h2>
+                                <p>Follows the line</p>
+                                <i class="fas fa-inbox"></i> devanshchoudhary10@gmail.com
+                            </div>
+                        </div>
+                        <div class="banner"></div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12 text-center">
+                                <div class="imgcontainer">
+                                    <img class="headsimg" src="lib/drashik.JPG">
+                                    <div class="imgoverlay" data-toggle="modal" data-target="#pic4">
+                                        <div class="imgtext">Click to see the full image</div>
+                                    </div>
+                                </div>
+                                <h1>Drashik Chhabra</h1>
+                                <h2>Head of Creative Graphics</h2>
+                                <p>One helluva virtual artist that looks like a teddy</p>
+                                <i class="fas fa-inbox"></i> drashikc@gmail.com
+                            </div>
+                            <div class="col-lg-4 col-md-12 text-center">
+                                <div class="imgcontainer">
+                                    <img class="headsimg" src="lib/vaibhav.JPG">
+                                    <div class="imgoverlay" data-toggle="modal" data-target="#pic5">
+                                        <div class="imgtext">Click to see the full image</div>
+                                    </div>
+                                </div>
+                                <h1>Vaibhav Bhardwaj</h1>
+                                <h2>Head of Creative Graphics</h2>
+                                <p>Can make you look like Thanos at a snap of fingers</p>
+                                <i class="fas fa-inbox"></i> veb20402@gmail.com
+                            </div>
+                            <div class="col-lg-4 col-md-12 text-center">
+                                <div class="imgcontainer">
+                                    <img class="headsimg" src="lib/kshitij.JPG">
+                                    <div class="imgoverlay" data-toggle="modal" data-target="#pic6">
+                                        <div class="imgtext">Click to see the full image</div>
+                                    </div>
+                                </div>
+                                <h1>Kshitij Pandey</h1>
+                                <h2>Head of 3D Modelling</h2>
+                                <p>Prints real virtual stuff</p>
+                                <i class="fas fa-inbox"></i> kshitij10940@gmail.com
+                            </div>
+                        </div>
+                        <div class="banner"></div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12 text-center">
+                                <div class="imgcontainer">
+                                    <img class="headsimg" src="lib/dhruv.jpeg">
+                                    <div class="imgoverlay" data-toggle="modal" data-target="#pic7">
+                                        <div class="imgtext">Click to see the full image</div>
+                                    </div>
+                                </div>
+                                <h1>Dhruv Bahri</h1>
+                                <h2>Head of Movie Making</h2>
+                                <p>The all-rounder perfectionist in the line</p>
+                                <i class="fas fa-inbox"></i> dhruvbahri@outlook.com
+                            </div>
+                            <div class="col-lg-4 col-md-12 text-center">
+                                <div class="imgcontainer">
+                                    <img class="headsimg" src="lib/asees.JPG">
+                                    <div class="imgoverlay" data-toggle="modal" data-target="#pic8">
+                                        <div class="imgtext">Click to see the full image</div>
+                                    </div>
+                                </div>
+                                <h1>Asees Singh</h1>
+                                <h2>Head of Movie Making</h2>
+                                <p>The tech guru</p>
+                                <i class="fas fa-inbox"></i> aseessingh4@gmail.com
+                            </div>
+                            <div class="col-lg-4 col-md-12 text-center">
+                                <div class="imgcontainer">
+                                    <img class="headsimg" src="lib/aaryan.jpeg">
+                                    <div class="imgoverlay" data-toggle="modal" data-target="#pic9">
+                                        <div class="imgtext">Click to see the full image</div>
+                                    </div>
+                                </div>
+                                <h1>Aaryan Kohli</h1>
+                                <h2>Head of Photography</h2>
+                                <p>The guy with the camera who clicks a lot of pictures for no reason</p>
+                                <i class="fas fa-inbox"></i> aaryan.kohli@outlook.com
+                            </div>
+                        </div>
+                        <div class="banner"></div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12 text-center">
+                                <div class="imgcontainer">
+                                    <img class="headsimg" src="lib/sanjeet.jpg">
+                                    <div class="imgoverlay" data-toggle="modal" data-target="#pic10">
+                                        <div class="imgtext">Click to see the full image</div>
+                                    </div>
+                                </div>
+                                <h1>Sanjeet Aggarwal</h1>
+                                <h2>GD Specialist</h2>
+                                <p>Can say stuff</p>
+                                <i class="fas fa-inbox"></i> sanjeetaggarwal@gmail.com
+                            </div>
+                            <div class="col-lg-4 col-md-12 text-center">
+                                <div class="imgcontainer">
+                                    <img class="headsimg" src="lib/nikita.jpeg">
+                                    <div class="imgoverlay" data-toggle="modal" data-target="#pic11">
+                                        <div class="imgtext">Click to see the full image</div>
+                                    </div>
+                                </div>
+                                <h1>Nikita Pant</h1>
+                                <h2>GD Specialist</h2>
+                                <p>Can say stuff too</p>
+                                <i class="fas fa-inbox"></i> nikitapant11@gmail.com
+                            </div>
+                            <div class="col-lg-4 col-md-12 text-center">
+                                <div class="imgcontainer">
+                                    <img class="headsimg" src="lib/snigdha.jpeg">
+                                    <div class="imgoverlay" data-toggle="modal" data-target="#pic12">
+                                        <div class="imgtext">Click to see the full image</div>
+                                    </div>
+                                </div>
+                                <h1>Snigdha Soti</h1>
+                                <h2>GD Specialist</h2>
+                                <p>Can say stuff as well, full of speakers here</p>
+                                <i class="fas fa-inbox"></i> ssoti25@gmail.com
+                            </div>
+                        </div>
+                        <div class="banner"></div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12 text-center">
+                                <div class="imgcontainer">
+                                    <img class="headsimg" src="lib/bhaskar.jpg">
+                                    <div class="imgoverlay" data-toggle="modal" data-target="#pic14">
+                                        <div class="imgtext">Click to see the full image</div>
+                                    </div>
+                                </div>
+                                <h1>Bhaskar Manchanda</h1>
+                                <h2>Assistant Photographer</h2>
+                                <p>Helps the guy with the camera who clicks a lot of pictures for no reason.</p>
+                                <i class="fas fa-inbox"></i> manchandabhaskar02@gmail.com
+                            </div>
+                            <div class="col-lg-4 col-md-12 text-center">
+                                <div class="imgcontainer">
+                                    <img class="headsimg" src="lib/namya.jpg">
+                                    <div class="imgoverlay" data-toggle="modal" data-target="#pic15">
+                                        <div class="imgtext">Click to see the full image</div>
+                                    </div>
+                                </div>
+                                <h1>Namya Chhabra</h1>
+                                <h2>Assistant Web Developer</h2>
+                                <p>A kid in making</p>
+                                <i class="fas fa-inbox"></i> namyachhabra@gmail.com
+                            </div>
+                            <div class="col-lg-4 col-md-12 text-center">
+                                <div class="imgcontainer">
+                                    <img class="headsimg" src="lib/shaivi.jpeg">
+                                    <div class="imgoverlay" data-toggle="modal" data-target="#pic16">
+                                        <div class="imgtext">Click to see the full image</div>
+                                    </div>
+                                </div>
+                                <h1>Shaivi Shewramani</h1>
+                                <h2>Head of Creative Department</h2>
+                                <p>She can do it all</p>
+                                <i class="fas fa-inbox"></i> shaivis10@gmail.com
+                            </div>
+                        </div>
+                        <div class="banner"></div>
                     </div>
                 </div>
+                <iframe style="width:100%; margin:0px; border: 0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7008.233786192498!2d77.15736990229725!3d28.566252389974288!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1da64b31037f%3A0x9fe8114b5940d45c!2sTagore+International+School!5e0!3m2!1sen!2sin!4v1513607065658" height="450" frameborder="0" allowfullscreen></iframe>
+                <footer>
+                    <div class="left text-center">
+                        <a href="index.html" style=""><img class="img-fluid" src="lib/logo.png" placeholder="Ordin@trix 19.0"></a>
+                        <div class="fdiv">
+                            &copy; All Rights Reserved. Pyrotech 2019<br>
+                            Website developed by Yuvraj Sharma and the Pyrotech team<br>
+                            Tagore International School<br>
+                            Vasant Vihar
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="right">
+                            <ul>
+                                <a href="login.php">
+                                    <li>Your Account</li>
+                                </a>
+                                <a href="register.php">
+                                    <li>Register</li>
+                                </a>
+                                <a href="sponsor.php">
+                                    <li>Sponsor</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </footer>
+            </div>
         </div>
-        </div>
-            <script src="https://vincentgarreau.com/particles.js/assets/_build/js/lib/particles.js"></script>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/vendors/scrolloverflow.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-            <script src="https://YuvrajSharma07.github.io/Web_Development_Folder/templates/Libraries/ripple_effect_v0.3/ripple_effect_v0.3/ripple_effect.min.js"></script>
-            <script defer src="https://use.fontawesome.com/releases/v5.4.1/js/all.js" integrity="sha384-L469/ELG4Bg9sDQbl0hvjMq8pOcqFgkSpwhwnslzvVVGpDjYJ6wJJyYjvG3u8XW7" crossorigin="anonymous"></script>
-            <script src="index.js"></script>
-            <script src="ordin.js"></script>
-	</body>
+    </div>
+    </div>
+    <script src="https://vincentgarreau.com/particles.js/assets/_build/js/lib/particles.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/vendors/scrolloverflow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://YuvrajSharma07.github.io/Web_Development_Folder/templates/Libraries/ripple_effect_v0.3/ripple_effect_v0.3/ripple_effect.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.4.1/js/all.js" integrity="sha384-L469/ELG4Bg9sDQbl0hvjMq8pOcqFgkSpwhwnslzvVVGpDjYJ6wJJyYjvG3u8XW7" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script src="ordin.js"></script>
+</body>
+
 </html>
