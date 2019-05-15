@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://YuvrajSharma07.github.io/Web_Development_Folder/templates/Libraries/ripple_effect_v0.3/ripple_effect_v0.3/ripple_effect.min.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="ordin.css">
-    <link rel="icon" href="https://yuvrajsharma07.github.io/ordin/favicon.png" sizes="26x26" type="image/png">
+    <link rel="icon" href="https://yuvrajsharma07.github.io/ordin/lib/favicon.png" sizes="26x26" type="image/png">
 </head>
 
 <body>
@@ -52,7 +52,7 @@
                         <a data-menuanchor="eve" class="nav-item nav-link" href="#eve">Events</a>
                     </li>
                     <li class="">
-                        <a data-menuanchor="con" class="nav-item nav-link" href="#con">Contact</a>
+                        <a data-menuanchor="con" class="nav-item nav-link" href="#con">Team</a>
                     </li>
                 </ul>
             </div>
@@ -82,11 +82,11 @@
                         <div class="modal-footer">
                             <ul class="contactguy">
                                 <li>
-                                    <p style="width:100%;">Know whom to contact in case of querie s,<b></b> that would be <a style="color:blue;" class="thisguy">these guys</a></p>
+                                    <p style="width:100%;">Know whom to contact in case of queries, that would be <a class="thisguy">these guys</a></p>
                                 </li>
                                 <li>
-                                    <div class="eventhead" id="eventhead" style="width:100%">
-                                        <table style="display: none;">
+                                    <div class="eventhead none" id="eventhead" style="width:100%">
+                                        <table>
                                             <tbody>
                                                 <tr>
                                                     <th>Aman Aggarwal</th>
@@ -134,8 +134,8 @@
                                     <p style="width:100%;    ">Know whom to contact in case of querie s,<b></b> that would be <a style="color:blue;" class="thisguy">these guys</a></p>
                                 </li>
                                 <li>
-                                    <div class="eventhead" id="eventhead">
-                                        <table style="display: none;">
+                                    <div class="eventhead none" id="eventhead">
+                                        <table>
                                             <tbody>
                                                 <tr>
                                                     <th>Sanjeet Aggarwal</th>
@@ -195,8 +195,8 @@
                                     <p>Know whom to contact in case of queries, that would be <a style="color:blue;" class="thisguy">these guys</a></p>
                                 </li>
                                 <li>
-                                    <div class="eventhead" id="eventhead">
-                                        <table style="display: none;">
+                                    <div class="eventhead none" id="eventhead">
+                                        <table>
                                             <tbody>
 
                                                 <tr>
@@ -244,8 +244,8 @@
                                     <p>Know whom to contact in case of queries, that would be <a style="color:blue;" class="thisguy">these guys</a></p>
                                 </li>
                                 <li>
-                                    <div class="eventhead" id="eventhead">
-                                        <table style="display: none;">
+                                    <div class="eventhead none" id="eventhead">
+                                        <table>
                                             <tbody>
                                                 <tr>
                                                     <th>Asees Singh</th>
@@ -290,8 +290,8 @@
                                     <p>Know whom to contact in case of queries, that would be <a style="color:blue;" class="thisguy">these guys</a></p>
                                 </li>
                                 <li>
-                                    <div class="eventhead" id="eventhead">
-                                        <table style="display: none;">
+                                    <div class="eventhead none" id="eventhead">
+                                        <table>
                                             <tbody>
                                                 <tr>
                                                     <th>Drashik Chhabra</th>
@@ -341,8 +341,8 @@
                                     <p>Know whom to contact in case of queries, that would be <a style="color:blue;" class="thisguy">these guys</a></p>
                                 </li>
                                 <li>
-                                    <div class="eventhead" id="eventhead">
-                                        <table style="display: none;">
+                                    <div class="eventhead none" id="eventhead">
+                                        <table>
                                             <tbody>
                                                 <tr>
                                                     <th>Yuvraj Sharma</th>
@@ -391,8 +391,8 @@
                                     <p>Know whom to contact in case of queries, that would be <a style="color:blue;" class="thisguy">these guys</a></p>
                                 </li>
                                 <li>
-                                    <div class="eventhead" id="eventhead">
-                                        <table style="display: none;">
+                                    <div class="eventhead none" id="eventhead">
+                                        <table>
                                             <tbody>
                                                 <tr>
                                                     <th>Aaryan Kohli</th>
@@ -520,16 +520,22 @@
             </div>
         </div>
         <div id="fullpage">
-            <div class="section" id="particles-js" data-anchor="ordin">
-                <div class="container">
+            <div class="section" data-anchor="ordin">
+                <div id="particles-js">
+                    <div class="container">
                     <div class="row">
-                        <div class="col-lg-3 col-md-12">
-                            <img class="img-fluid" src="lib/tis.png">
-                        </div>
-                        <div class="col-lg-6 col-md-12">
-                            <img class="img-fluid" src="lib/logo%20ordin.png">
+                        <div class="col-lg-12 col-md-12">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-12">
+                                    <img class="img-fluid" src="lib/tis.png">
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <img class="img-fluid" src="lib/logo%20ordin.png">
+                                </div>
+                            </div>
                         </div>
                     </div>
+                </div>
                 </div>
             </div>
             <div class="section" data-anchor="home">
@@ -573,7 +579,7 @@
                         <li>Registered schools will  report to the registration desk on 06 August 2019 before 9 AM. In case a school is running late, it must inform the organizers about the same.</li>
                         <li>All the events will be held simultaneously starting from 9 AM and one  student can  register only for one event.</li>
                         <li>Each school team must be accompanied by a teacher.</li>
-                        <li>Please refer to our school website, <a href="http://www.tagoreint.com/vv">www.tagoreint.com/vv</a> and our Facebook page, <a href="">Ordin@trix’19.0</a>, for the latest updates on the events.</li>
+                        <li>Please refer to our school website, <a href="http://www.tagoreint.com/vv" target="_blank">www.tagoreint.com/vv</a> and our Facebook page, <a href="https://www.facebook.com/ordinatrix19.0/" target="_blank">Ordin@trix’19.0</a>, for the latest updates on the events.</li>
                         <li>Decisions of the organizers & jury members regarding any issue related to Ordin@trix’19.0 will be FINAL AND BINDING on all schools and participants.</li>
                         <li>To qualify for the overall trophy, a school must take part in a minimum of 5 events.</li>
                     </ol>
@@ -816,15 +822,15 @@
                             </div>
                             <div class="col-lg-4 col-md-12 text-center">
                                 <div class="imgcontainer">
-                                    <img class="headsimg" src="https://yuvrajsharma07.github.io/ordin/lib/sanya.jpeg">
-                                    <div class="imgoverlay" data-toggle="modal" data-target="#pic22">
+                                    <img class="headsimg" src="https://yuvrajsharma07.github.io/ordin/lib/kamath.jpg">
+                                    <div class="imgoverlay" data-toggle="modal" data-target="#pic18">
                                         <div class="imgtext">Click to see the full image</div>
                                     </div>
                                 </div>
-                                <h1>Saanya Anand</h1>
-                                <h2>Assistant Head of Movie making</h2>
-                                <p></p>
-                                <i class="fas fa-inbox"></i> 
+                                <h1>Manya Kamath</h1>
+                                <h2>Assistant Photographer</h2>
+                                <p>Snaps the universe with her camera</p>
+                                <i class="fas fa-inbox"></i>manyakamath26@gmail.com
                             </div>
                         </div>
                         <div class="banner"></div>
@@ -879,18 +885,6 @@
                                 <h2>Assistant Head of Movie making</h2>
                                 <p>Rolling the camera better than anyone in da 'hood</p>
                                 <i class="fas fa-inbox"></i> harshsingh10122002@gmail.com
-                            </div>
-                            <div class="col-lg-4 col-md-12 text-center">
-                                <div class="imgcontainer">
-                                    <img class="headsimg" src="https://yuvrajsharma07.github.io/ordin/lib/kamath.jpg">
-                                    <div class="imgoverlay" data-toggle="modal" data-target="#pic18">
-                                        <div class="imgtext">Click to see the full image</div>
-                                    </div>
-                                </div>
-                                <h1>Manya Kamath</h1>
-                                <h2>Assistant Photographer</h2>
-                                <p>Snaps the universe with her camera</p>
-                                <i class="fas fa-inbox"></i>manyakamath26@gmail.com
                             </div>
                             <div class="col-lg-4 col-md-12 text-center">
                                 <div class="imgcontainer">
