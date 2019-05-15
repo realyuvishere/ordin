@@ -1,5 +1,6 @@
 canvas {
     vertical-align: bottom;
+    height: 100%
 }
 #particles-js {
     width: 100%; 
