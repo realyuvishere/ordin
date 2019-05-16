@@ -3,7 +3,7 @@ $(document).ready(function() {
         scrollOverflow: true,
         menu: '#navb',
         recordHistory: false,
-        sectionsColor: ['#111', '#222', '#222', '#333'],
+        sectionsColor: ['#111', '#222', '#333', '#222'],
         afterRender: function(){
             $(".lds-css").fadeOut("slow");
             $('.intro').delay(1000).fadeOut("slow");

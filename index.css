@@ -248,10 +248,6 @@ li.active {
 	width: 25%;
     padding-bottom: 0.1rem
 }
-
-.modal i{
-    text-align: center;
-}
 .modal p {
 	font-size: 1rem
 }
@@ -413,10 +409,9 @@ th{
 	}
 	footer {
 		height: auto
-        
 	}
-	.fdiv, footer {
-		text-align: center !important
+	.fdiv, footer .left {
+		text-align: left !important
 	}
     .fullimg {
         width: 100%
