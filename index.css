@@ -254,6 +254,9 @@ li.active {
 .navbar ul {
 	font-size: inherit
 }
+.navbar ul a {
+    transition: .4s ease-out
+}
 ul, ol {
 	font-family: 'Quicksand';
 	font-size: 1.2rem
