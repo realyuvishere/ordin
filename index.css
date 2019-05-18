@@ -322,15 +322,6 @@ th{
     animation: 1s pic ease-out;
     -webkit-animation: 1s pic ease-out;
 }
-/* loader */
-@keyframes lds-ring {
-  0% {
-    transform: rotate(0)
-  }
-  100% {
-    transform: rotate(360deg)
-  }
-}
 .lds-ring > div{
     position: absolute;
     left: 35%;
@@ -341,6 +332,7 @@ th{
     border: 20px solid;
     border-color: #67aeff transparent transparent transparent;
     animation: lds-ring 1.5s cubic-bezier(0.5,0,0.5,1) infinite;
+    -webkit-animation: lds-ring 1.5s cubic-bezier(0.5,0,0.5,1) infinite;
 }
 .lds-ring > div:nth-child(2) {
     animation-delay: .2s;
@@ -367,21 +359,6 @@ th{
 #particles-js img {
     position: absolute
 }
-/*
-.ordin {
-    font-size: 5rem;
-    color: #fff; 
-    position: absolute;
-    font-family: 'Loves';
-    padding: 1rem;
-    padding-top: 30%;
-    transition: .4s ease-out;
-    cursor: pointer
-}
-.ordin:hover {
-    background-color: rgba(255,255,255,0.4)
-}
-*/
 .scrolldn {
 	font-size: 5rem;
 	position: relative;
@@ -401,6 +378,12 @@ th{
 }
 .formbod hr {
     border-color: #f9f9f9
+}
+.sponsors ul {
+    list-style-type: none
+}
+.sponsors img {
+    width: 20%
 }
 
 @media screen and (max-width: 915px) {
@@ -442,3 +425,5 @@ th{
 @-webkit-keyframes typing{from{width: 0}to{width: 100%}}
 @keyframes opacity{from{opacity: 0}to{opacity: 1}}
 @-webkit-keyframes opacity{from{opacity: 0}to{opacity: 1}}
+@keyframes lds-ring{0%{transform: rotate(0)}100%{transform: rotate(360deg)}}
+@-webkit-keyframes lds-ring{0%{transform: rotate(0)}100%{transform: rotate(360deg)}}
