@@ -410,6 +410,12 @@ th{
         padding: 17%;
         font-size: 1rem
     }
+    .sponsors img {
+        width: 50%
+    }
+    h1 {
+        font-size: 3rem
+    }
 }
 @font-face {
     font-family: Loves;
