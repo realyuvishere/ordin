@@ -356,9 +356,11 @@ th{
     font-family: 'Major Mono Display';
     font-size: 2rem
 }
+/*
 #particles-js img {
     position: absolute
 }
+*/
 .scrolldn {
 	font-size: 5rem;
 	position: relative;
@@ -380,10 +382,15 @@ th{
     border-color: #f9f9f9
 }
 .sponsors ul {
-    list-style-type: none
+    list-style-type: none;
+    padding-left: 0
 }
-.sponsors img {
-    width: 20%
+.sponsors {
+    padding: 1rem
+}
+.sponsors hr {
+    border-color: #fff;
+    width: 50%
 }
 
 @media screen and (max-width: 915px) {
