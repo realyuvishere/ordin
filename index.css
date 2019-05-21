@@ -248,8 +248,17 @@ li.active {
 	width: 25%;
     padding-bottom: 0.1rem
 }
+.modal-header.bg-dark, .modal-footer.bg-dark {
+    background-color: #222 !important
+}
 .modal p {
 	font-size: 1rem
+}
+.modal-footer p {
+    color: #fff !important
+}
+.text-primary {
+    color: #2f8ef3 !important
 }
 .navbar ul {
 	font-size: inherit
