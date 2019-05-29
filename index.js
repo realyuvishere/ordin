@@ -11,11 +11,6 @@ $(document).ready(function() {
                 $(".mainbod").css('opacity', '1');
                 $(".intro").addClass("none");
             }, 2000);
-            $(document).ready(function(){
-                $(".thisguy").click(function(){
-                    $(".eventhead").slideToggle();
-                });
-            });
         },
         onLeave: function(origin, destination, direction){
             var leavingSection = this;
@@ -43,6 +38,20 @@ var x = setInterval(function() {
         document.getElementById("demo").innerHTML = "Let's Roll ;)";
     }
 }, 1000);
+$(document).ready(function(){
+    if($(window).width() < 1000) {
+        $(".thisguy").removeClass("text-primary");
+        $(".eventhead").removeClass("none");
+        $(".nme").removeClass("text-white");
+    } else {
+        $(".nme").addClass("text-white");
+        $(document).ready(function(){
+            $(".thisguy").click(function(){
+                $(".eventhead").slideToggle();
+            });
+        });
+    }
+});
 setInterval(function(){
     $("#demo").css('background-color', 'rgba(199, 4, 0, 0.83)');
     setTimeout(function(){

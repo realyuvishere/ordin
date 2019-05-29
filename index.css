@@ -35,6 +35,9 @@ p {
 }
 .contactguy{
     list-style-type: none;
+    padding: 0;
+    position: relative;
+    width: 100%
 }
 .banner {
 	width: 100%;
@@ -116,11 +119,21 @@ footer a {
 	cursor: pointer;
 	text-decoration: none;
 	transition: .4s ease-out;
-	color: #fff
+    color: #51a1f7
 }
 footer a:hover {
 	text-decoration: underline;
-	color: #fff
+	color: #2f8ef3
+}
+.card {
+    border: 0;
+    background-color: rgba(0,0,0,0);
+}
+.card-header {
+    font-family: 'Loves'
+}
+.card-body {
+    background-color: rgba(0,0,0,0.1)
 }
 .fdiv {
 	font-size: .8rem;
@@ -282,14 +295,18 @@ ul, ol {
 	padding: 2rem
 }
 .eventhead{
-    border-width:5px;
-    font-size: 15px;
-    font-family: loves;
-    color:darkgray;
+    border-width:1rem;
+    font-size: 1rem;
+    font-family: 'Loves';
+    color:#999;
+}
+.eventhead table {
+    width: 100%;
+    height: auto;
 }
 th{
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 .imgcontainer {
     position: relative;
@@ -365,11 +382,6 @@ th{
     font-family: 'Major Mono Display';
     font-size: 2rem
 }
-/*
-#particles-js img {
-    position: absolute
-}
-*/
 .scrolldn {
 	font-size: 5rem;
 	position: relative;
@@ -409,11 +421,14 @@ th{
 		padding-top: 1rem;
 		height: 100%
 	}
+    .modal {
+        overflow: auto !important
+    }
+    th {
+        padding: 0px
+    }
 	footer {
 		height: auto
-	}
-	.fdiv, footer .left {
-		text-align: left !important
 	}
     .fullimg {
         width: 100%
