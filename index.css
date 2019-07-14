@@ -11,7 +11,7 @@ button, input, textarea {
 	cursor: pointer
 }
 a, .carousel-indicators li {
-	cursor: pointer
+	cursor: pointer;
 }
 h1 {
 	font-size: 4.5rem
@@ -115,7 +115,7 @@ footer .right ul li {
 footer .right ul li:hover {
 	text-decoration: underline
 }
-footer a {
+a.light {
 	cursor: pointer;
 	text-decoration: none;
 	transition: .4s ease-out;
@@ -408,6 +408,10 @@ th{
 .sponsors hr {
     border-color: #fff;
     width: 50%
+}
+.news {
+    padding: 1rem;
+    width: 100%;
 }
 
 @media screen and (max-width: 915px) {
