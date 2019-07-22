@@ -1,215 +1,71 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Cross word Puzzel</title>
-<style>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Cross word Puzzle</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="crossword.css">
+    </head>
+    <body style="background-color: #333" class="text-white" onload="initializeScreen()">
+        
+        <center>
+            <a href="http://www.ordinatrix.tech/"><img style="padding: 5rem; background-color: #454d55" class="img-fluid" src="https://yuvrajsharma07.github.io/ordin/lib/logo.png" placeholder="Ordin@trix 19.0"></a>
+            <div class="banner"></div>
+            <input class="btn btn-lg btn-outline-secondary"  type="submit" value="Clear All" onclick="clearAllClicked()">
+            <input class="btn btn-lg btn-outline-secondary"  type="submit" value="Check" onclick="checkClicked()">
+            <input class="btn btn-lg btn-outline-secondary"  type="submit" value="Solve" onclick="solveClicked()">
+            <input class="btn btn-lg btn-outline-secondary"  type="submit" value="Clue" onclick="clueClicked()">
+            <input class="btn btn-lg btn-outline-secondary"  type="submit" value="Submit">
+            <div class="banner"></div>
+            <div id="leftBox">
+                <table id="puzzle">
 
-#cross{
-	text-align: center;
-	width:30px;
-	height:30px;
-	margin: 0;
-	padding: 0;
-	border-collapse: collapse;
-	border: 1px solid white;
-}
-#buttons{
-	width:30%;
-	float: right;
-}
-tr{
-	margin: 0;
-	padding: 0;
-	border-collapse: collapse;
-}
-td{
-	height: 30px;
-	width: 30px;
-}
-#leftBox{
-	float: left;
-}
-#rightBox{
-	float: left;
-	clear:left;
-}
-.butt{
-	height:50px;
-	width: 107px;
-}
-#puzzel{
-	text-align: center;
-	margin: 0;
-	padding: 0;
-	border-collapse: collapse;
-	border: 1px solid black;
-}
-.inputBox{
-		width: 40px;
-		height:40px;
-		border: 1px solid black;
-		text-align: center;
-}
-#hintsTable{
-	width: 480px;
-	float: left;
-	clear: left;
-}
-</style>
-
-<script>
-//Globals
-var currentTextInput;
-var puzzelArrayData;
-//Loads the Crossword
-function initializeScreen(){
-	var puzzelTable = document.getElementById("puzzel");
-	puzzelArrayData = preparePuzzelArray();
-	for ( var i = 0; i < puzzelArrayData.length ; i++ ) {
-		var row = puzzelTable.insertRow(-1);
-		var rowData = puzzelArrayData[i];
-		for(var j = 0 ; j < rowData.length ; j++){
-			var cell = row.insertCell(-1);
-			if(rowData[j] != 0){
-				var txtID = String('txt' + '_' + i + '_' + j);
-				cell.innerHTML = '<input type="text" class="inputBox" maxlength="1" style="text-transform: lowercase" ' + 'id="' + txtID + '" onfocus="textInputFocus(' + "'" + txtID + "'"+ ')">';
-			}else{
-				cell.style.backgroundColor  = "black";
-			}
-		}
-	}
-	addHint();
-}
-//Adds the hint numbers
-function addHint(){
-	document.getElementById("txt_0_4").placeholder = "1";
-	document.getElementById("txt_2_6").placeholder = "2";
-	document.getElementById("txt_3_1").placeholder = "3";
-	document.getElementById("txt_3_9").placeholder = "4";
-	document.getElementById("txt_6_2").placeholder = "5";
-	document.getElementById("txt_9_0").placeholder = "6";
-}
-//Stores ID of the selected cell into currentTextInput
-function textInputFocus(txtID123){
-	currentTextInput = txtID123;
-}
-//Returns Array
-function preparePuzzelArray(){
-var items = [	[0, 0, 0, 0, 'p', 0, 0, 0, 0, 0],
-				[0, 0, 0, 0, 'u', 0, 0, 0, 0, 0 ],
-				[0, 0, 0, 0, 'n', 0, 'b', 0, 0, 0],
-				[0, 'h', 'y', 'd', 'e', 'r', 'a', 'b', 'a', 'd'],
-				[0, 0, 0, 0, 0, 0, 'n', 0, 0, 'e'],
-				[0, 0, 0, 0, 0, 0, 'g', 0, 0, 'l'],
-				[0, 0, 'm', 'u', 'm', 'b', 'a', 'i', 0, 'h'],
-				[0, 0, 0, 0, 0, 0, 'l', 0, 0, 'i'],
-				[0, 0, 0, 0, 0, 0, 'o', 0, 0, 0],
-				['k', 'a', 's', 'h', 'm', 'i','r', 0, 0, 0],
-				[0, 0, 0, 0, 0, 0, 'e', 0, 0, 0]
-			];
-return items;
-}
-//Clear All Button
-function clearAllClicked(){
-	currentTextInput = '';
-	var puzzelTable = document.getElementById("puzzel");
-	puzzelTable.innerHTML = '';
-    initializeScreen();
-}
-//Check button
-function checkClicked(){
-	for ( var i = 0; i < puzzelArrayData.length ; i++ ) {
-		var rowData = puzzelArrayData[i];
-		for(var j = 0 ; j < rowData.length ; j++){
-			if(rowData[j] != 0){
-				var selectedInputTextElement = document.getElementById('txt' + '_' + i + '_' + j);
-				if(selectedInputTextElement.value != puzzelArrayData[i][j]){
-					selectedInputTextElement.style.backgroundColor = 'red';
-					
-				}else{
-					selectedInputTextElement.style.backgroundColor = 'white';
-				}
-			}
-		}
-	}
-}
-//Clue Button
-function clueClicked(){
-	if (currentTextInput != null){
-		var temp1 = currentTextInput;
-		var token = temp1.split("_");
-		var row = token[1];
-		var column = token[2];
-		document.getElementById(temp1).value = puzzelArrayData[row][column];
-		//checkClicked();
-	}
-}
-//Solve Button
-function solveClicked(){
-	if (currentTextInput != null){
-		var temp1 = currentTextInput;
-		var token = temp1.split("_");
-		var row = token[1];
-		var column = token[2];
-		
-		// Print elements on top
-		for(j = row; j >= 0; j--){
-			if(puzzelArrayData[j][column] != 0){
-				document.getElementById('txt' + '_' + j + '_' + column).value = puzzelArrayData[j][column];
-				}else break;
-		}
-		// Print elements on right
-		for(i = column; i< puzzelArrayData[row].length; i++){
-			if(puzzelArrayData[row][i] != 0){
-				document.getElementById('txt' + '_' + row + '_' + i).value = puzzelArrayData[row][i];
-				}else break;
-		}
-		
-		// Print elements below
-		for(m = row; m< puzzelArrayData.length; m++){
-			if(puzzelArrayData[m][column] != 0){
-				document.getElementById('txt' + '_' + m + '_' + column).value = puzzelArrayData[m][column];
-				}else break;
-		}
-		// Print elements on left
-		for(k = column; k >= 0; k--){
-			if(puzzelArrayData[row][k] != 0){
-				document.getElementById('txt' + '_' + row + '_' + k).value = puzzelArrayData[row][k];
-				}else break;
-		}
-		// Done!
-		
-	}
-}
-</script>
-</head>
-<body onload="initializeScreen()">
-<div id="leftBox">
-<table id="puzzel">
-
-</table>
-</div>
-<div id="rightBox">
-<table>
-	<tr><td><input class="butt"  type="submit" value="Clear All" onclick="clearAllClicked()"></td>
-	<td><input class="butt"  type="submit" value="Check" onclick="checkClicked()"></td>
-	<td><input class="butt"  type="submit" value="Solve" onclick="solveClicked()"></td>
-	<td><input class="butt"  type="submit" value="Clue" onclick="clueClicked()"></td></tr>
-</table>
-</div>
-<table id="hintsTable">
-		<tr>
-			<td><strong>Horizontal:</strong></td><td><strong>Vertical:</strong></td>
-		</tr>
-		<tr>
-			<td>3. Cultural Hub (Hyderabad)</td><td>1. Education Hub (Pune)</td>
-		</tr>
-		<tr>
-			<td>5. India's financial capital (Mumbai)</td><td>2. Information Technology Hub (Bangalore)</td>
-		</tr>
-		<tr>
-			<td>6. Saffron region (Kashmir)</td><td>4. Capital of India (Delhi)</td>
-</table>
-
-</body>
+                </table>
+            </div>
+            <div class="banner"></div>
+            <input class="btn btn-lg btn-outline-secondary"  type="submit" value="Clear All" onclick="clearAllClicked()">
+            <input class="btn btn-lg btn-outline-secondary"  type="submit" value="Submit">
+            <div class="banner"></div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Across</h1>
+                    <ul class="text-left" style="list-style-type: none;">
+                        <li>3) Confusion= { ++++++++++[>+>+++>+++++++>++++++++++<<<<-]>>>++++++++++++++.>++++++++++++++.<+++++++++++++.>----.+++++.<++++++++.>.+.-----.+++. }</li>
+                        <li>5) Faster than Android and macOS</li>
+                        <li>8) An Apple fell on the M68</li>
+                        <li>9) Theory of Relativity</li>
+                        <li>11) That's one small step for man, one giant leap for mankind</li>
+                        <li>12) Pray for Me</li>
+                        <li>13) Dr Dre</li>
+                        <li>15) A Co-Founder who Cameoed in the Big Bang Theory</li>
+                        <li>17) 43 72 65 61 74 6f 72 6f 66 49 6e 74 65 72 6e 65 74</li>
+                        <li>18) Cheese Grater</li>
+                        <li>19) Don't panic, it's organic!</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h1>Down</h1>
+                    <ul class="text-left" style="list-style-type: none;">
+                        <li>1) The reason to move on: courage</li>
+                        <li>2) 氧气</li>
+                        <li>4) We are under assault- The engines are dead, life support failing</li>
+                        <li>6) Insomniac</li>
+                        <li>7) That's all folks!</li>
+                        <li>10) Jeremy Zucker</li>
+                        <li>13) --- -. . .--. .-.. ..- ...</li>
+                        <li>14) I love you, bro</li>
+                        <li>16) A new kind of credit card</li>
+                    </ul>
+                </div>
+                </div>
+                <div class="banner"></div>
+        </center>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="crossword.js"></script>
+    </body>
 </html>
