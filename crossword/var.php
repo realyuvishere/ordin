@@ -1,6 +1,33 @@
-//Globals
+<html>
+<body onload="initializeScreen()">
+    <?php
+    function test_input($data) {
+   $data = trim($data);
+   $data = stripslashes($data);
+   $data = htmlspecialchars($data);
+   return $data;
+}
+    ?>
+    <form method="post" action=""><table id="puzzle"></table>
+        <input class="btn" type="submit" value="Submit" name="submit">
+        <input type="text" name="usermail" id="usrmail" value="ha@ga.com">
+        <input type="text" name="usercode" id="usrcode" value="A">
+    </form>
+    <button class="btn timerbtn">button</button><br>
+    <button class="btn timerstop">stop</button><br>
+    <div class="timer" id="timer">00:00:00</div>
+    <script src="easytimer.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+    //Globals
 var currentTextInput;
 var puzzleArrayData;
+var usrmail;
+var usrcode;
+var timetaken;
+var username;
+var ucode;
+var timet;
 //Loads the Crossword
 function initializeScreen(){
 	var puzzleTable = document.getElementById("puzzle");
@@ -12,7 +39,8 @@ function initializeScreen(){
 			var cell = row.insertCell(-1);
 			if(rowData[j] != 0){
 				var txtID = String('txt' + '_' + i + '_' + j);
-				cell.innerHTML = '<input type="text" class="inputBox form-control" maxlength="1" style="text-transform: lowercase" ' + 'id="' + txtID + '" onfocus="textInputFocus(' + "'" + txtID + "'"+ ')">';
+                var nameID = String(i + '_' + j);
+				cell.innerHTML = '<input type="text" class="inputBox form-control" maxlength="1" style="text-transform: lowercase" ' + 'id="' + txtID + '" onfocus="textInputFocus(' + "'" + txtID + "'"+ ')" name="' + nameID + '">';
 			}else{
 				cell.style.backgroundColor  = "black";
 			}
@@ -23,6 +51,7 @@ function initializeScreen(){
 //Adds the hint numbers
 function addHint(){
 	document.getElementById("txt_0_2").placeholder = "1";
+	document.getElementById("txt_1_2").placeholder = "1";
 	document.getElementById("txt_0_7").placeholder = "2";
 	document.getElementById("txt_1_0").placeholder = "3";
 	document.getElementById("txt_3_12").placeholder = "4";
@@ -149,3 +178,27 @@ function solveClicked(){
 		
 	}
 }
+    function onSubmit(){
+        usrmail = $("#usrmail").val();
+        usrcode = $("#usrcode").val();
+        timetaken = document.getElementById('timer').innerHTML;
+        for ( var i = 0; i < puzzleArrayData.length ; i++ ) {
+		var rowData = puzzleArrayData[i];
+    }
+}
+    var timer = new easytimer.Timer();
+    $('.timerbtn').click(function (){
+        timer.start();
+    });
+    $('.timerstop').click(function () {
+        timer.stop();
+        onSubmit();
+    });
+    timer.addEventListener('secondsUpdated', function (e) {
+        $('.timer').html(timer.getTimeValues().toString());
+    });
+    
+</script>
+    
+    </body>
+</html>
